@@ -12,17 +12,17 @@ function BlogDetails(props) {
   useEffect(() => {
     axios
       .get(require(`../blog/${blogFile}.md`))
-      .then(result => {
+      .then((result) => {
         setContent(result.data);
       })
-      .catch(err => console.log(err));
-  }, [content]);
+      .catch((err) => console.log(err));
+  }, [content, blogFile]);
 
   const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
   const disqusConfig = {
     url: "https://tf-react-chester.now.sh/", //Homepage link of this site.
     identifier: blogId,
-    title: blogFile
+    title: blogFile,
   };
 
   return (
