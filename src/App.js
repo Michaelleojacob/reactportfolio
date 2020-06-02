@@ -14,12 +14,15 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/reactportfolio/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/resume" component={Resumes} />
-        <Route path="/portfolios" component={Portfolios} />
-        <Route path="/blogs" exact component={Blogs} />
-        <Route path="/react/blog-details/:id/:title" component={BlogDetails} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/reactportfolio/about" component={About} />
+        <Route path="/reactportfolio/resume" component={Resumes} />
+        <Route path="/reactportfolio/portfolios" component={Portfolios} />
+        <Route path="/reactportfolio/blogs" exact component={Blogs} />
+        <Route
+          path="/reactportfolio/react/blog-details/:id/:title"
+          component={BlogDetails}
+        />
+        <Route path="/reactportfolio/contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   );

@@ -40,27 +40,27 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">
+            <NavLink to="/reactportfolio/about">
               <span>About</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume">
+            <NavLink to="/reactportfolio/resume">
               <span>Resume</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolios">
+            <NavLink to="/reactportfolio/portfolios">
               <span>Portfolios</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/blogs">
+            <NavLink to="/reactportfolio/blogs">
               <span>Blogs</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">
+            <NavLink to="/reactportfolio/contact">
               <span>Contact</span>
             </NavLink>
           </li>
