@@ -1,4 +1,5 @@
 {
+  "homepage": "https://myusername.github.io/App.js",
   "name": "tf-react-chester",
   "version": "2.0.0",
   "dependencies": {
@@ -7,6 +8,7 @@
     "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.7",
     "fslightbox-react": "^1.4.0",
+    "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -23,6 +25,8 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
