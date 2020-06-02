@@ -28,14 +28,17 @@ function Header() {
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">
-          <Link to="/reactportfolio/">
+          <Link to="https://michaelleojacob.github.io/reactportfolio/">
             <img src={information.brandImage} alt="brandimage" />
           </Link>
         </div>
 
         <ul className="mi-header-menu">
           <li>
-            <NavLink exact to="/reactportfolio/">
+            <NavLink
+              exact
+              to="https://michaelleojacob.github.io/reactportfolio/"
+            >
               <span>Home</span>
             </NavLink>
           </li>
