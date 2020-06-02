@@ -28,14 +28,14 @@ function Header() {
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">
-          <Link to="/reactportfolio">
+          <Link to="/">
             <img src={information.brandImage} alt="brandimage" />
           </Link>
         </div>
 
         <ul className="mi-header-menu">
           <li>
-            <NavLink exact to="/reactportfolio">
+            <NavLink exact to="/">
               <span>Home</span>
             </NavLink>
           </li>
