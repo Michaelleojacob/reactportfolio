@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/reactportfolio/" exact component={Home} />
+        <Route path="/reactportfolio/home" exact component={Home} />
         <Route path="/reactportfolio/about" component={About} />
         <Route path="/reactportfolio/resume" component={Resumes} />
         <Route path="/reactportfolio/portfolios" component={Portfolios} />
