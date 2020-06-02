@@ -35,7 +35,7 @@ function Header() {
 
         <ul className="mi-header-menu">
           <li>
-            <NavLink exact to="/reactportfolio/">
+            <NavLink exact to="/">
               <span>Home</span>
             </NavLink>
           </li>
