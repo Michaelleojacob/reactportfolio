@@ -1,0 +1,128 @@
+/*
+ * About Styles
+ */
+
+.mi-about {
+  &-image {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 65%;
+      width: 15px;
+      background: rgba($color-theme, 0.6);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: auto;
+      bottom: 0;
+      height: 65%;
+      width: 15px;
+      background: rgba($color-theme, 0.6);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 100px;
+      width: 100px;
+      margin-left: -50px;
+      margin-top: -50px;
+      color: #ffffff;
+      display: inline-block;
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.4s ease-out 0s;
+      pointer-events: none;
+  
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &:hover &-icon{
+      visibility: visible;
+      opacity: 0.5;
+      transform: scale(1);
+    }
+  }
+
+  &-content {
+    h3 {
+      font-weight: 600;
+      margin-top: -8px;
+    }
+
+    ul {
+      li {
+        list-style: none;
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+
+        b {
+          min-width: 120px;
+          display: inline-block;
+          position: relative;
+          margin-right: 7px;
+
+          &:after {
+            content: ":";
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    .mi-button{
+      margin-top: 15px;
+    }
+  }
+
+  @media #{$layout-tablet}{
+    &-content{
+      margin-top: 30px;
+    }
+  }
+
+  @media #{$layout-mobile-lg}{
+    &-image{
+      &-icon{
+        height: 70px;
+        width: 70px;
+        margin-left: -35px;
+        margin-top: -35px;
+      }
+    }
+    &-content{
+      margin-top: 30px;
+
+      ul{
+        li{
+          b{
+            min-width: 90px;
+          }
+        }
+      }
+    }
+  }
+}

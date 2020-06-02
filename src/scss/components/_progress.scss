@@ -1,0 +1,37 @@
+/*
+ * Progress Bar
+ */
+
+.mi-progress{
+  &-title{
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &-inner{
+    display: flex;
+    align-items: center;
+  }
+
+  &-percentage{
+    flex: 0 0 60px;
+  }
+
+  &-container{
+    background: $color-border;
+    display: block;
+    height: 6px;
+    width: 100%;
+    position: relative;
+  }
+
+  &-active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: $color-theme;
+    width: 0;
+    transition: all 1s cubic-bezier(0.01, 0.57, 0.68, 1.05) 0s;
+  }
+}

@@ -1,0 +1,112 @@
+/*
+ * Portfolio
+ */
+
+.mi-portfolio {
+  transition: $transition;
+  visibility: hidden;
+  opacity: 0;
+
+  &-image {
+    display: block;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      height: calc(100% - 30px);
+      width: calc(100% - 30px);
+      background: rgba(#ffffff, 0.9);
+      transition: $transition;
+      transform: scaleX(0);
+      transform-origin: 0;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      text-align: center;
+      width: 100%;
+      transform: translateY(-50%);
+      visibility: hidden;
+      opacity: 0;
+      margin-top: 30px;
+      transition: all 0.4s ease-in-out 0.2s;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 7px;
+
+        a, button {
+          display: inline-block;
+          height: 45px;
+          width: 45px;
+          padding: 5px 0;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 1;
+          background: $color-body;
+          color: #ffffff;
+          border: 1px solid $color-body;
+          border-radius: 100px;
+         outline: none; 
+          font-size: 1.25rem;
+          transition: $transition;
+
+          svg{
+            height: 100%;
+          }
+
+          &:hover {
+            background: $color-theme;
+            border-color: $color-theme;
+          }
+        }
+      }
+    }
+  }
+
+  h5 {
+    color: $color-heading;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+
+    a {
+      color: #ffffff;
+      transition: $transition;
+
+      &:hover {
+        color: $color-theme;
+      }
+    }
+  }
+
+  h6 {
+    color: $color-body;
+    margin-bottom: 0;
+  }
+
+  &:hover &-image{
+    &::before{
+      transform: scaleX(1);
+    }
+
+    ul{
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+
+  &.mi-portfolio-visible{
+    visibility: visible;
+    opacity: 1;
+  }
+}

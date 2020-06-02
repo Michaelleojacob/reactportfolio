@@ -1,0 +1,74 @@
+/**
+ * Blog Styels
+ */
+
+.mi-blog {
+  background: lighten($color-bg-body, 5);
+  padding: 15px;
+
+  &-image {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: $transition;
+    }
+  }
+
+  &-date {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: rgba($color-theme, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    min-width: 80px;
+    min-height: 80px;
+
+    span {
+      display: block;
+    }
+
+    .date {
+      font-size: 2.5rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .month {
+      font-size: 1.3rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+  }
+
+  &-content {
+    padding-top: 15px;
+
+    h5 {
+      margin-bottom: 0;
+      font-weight: 600;
+      margin-bottom: 0;
+
+      a {
+        transition: $transition;
+        color: $color-heading;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: $color-theme;
+        }
+      }
+    }
+  }
+
+  &:hover &-image {
+    img {
+      transform: scale(1.15);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/*
+ * Pagination
+ */
+
+.mi-pagination {
+
+  ul {
+    list-style: none;
+    margin-top: -5px;
+    margin-left: -5px;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 5px;
+
+    a {
+      display: inline-block;
+      border: 1px solid $color-theme;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      color: $color-theme;
+      line-height: 38px;
+    }
+
+    &.is-active {
+      a {
+        background: $color-theme;
+        color: #ffffff;
+      }
+    }
+  }
+}
