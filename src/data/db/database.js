@@ -119,22 +119,22 @@ const database = {
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
+      title: "Memory Game",
+      subtitle: "Game built entirely with javascript, css, and html.",
+      imageUrl: "https://i.imgur.com/bh8VxTc.png",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: "https://dribbble.com",
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
+      title: "Pawpals",
+      subtitle: "Social Media platform for dogs and dog lovers.",
+      imageUrl: "https://i.imgur.com/zFD0Hq6.png",
       largeImageUrl: [
         "/images/portfolio-image-4-lg.jpg",
         "/images/portfolio-image-4-lg2.jpg",
       ],
-      url: "https://facebook.com",
+      url: "https://pawpals-social-network.herokuapp.com/",
     },
     {
       id: 3,
