@@ -54,11 +54,11 @@ function Header() {
               <span>portfolios</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/reactportfolio/blogs">
               <span>Blogs</span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/reactportfolio/contact">
               <span>Contact</span>
