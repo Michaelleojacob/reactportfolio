@@ -4,7 +4,7 @@ const database = {
   information: {
     name: "Michael Jacob",
     aboutContent:
-      "Full stack developer with training in front end, middleware, API, routing, and back end programming.",
+      "Born and raised in California. I am a dedicated and determined full stack web developer. Works well with others, with a background in customer service, leadership, and detail oriented work.",
     age: 27,
     phone: "619-871-1891",
     nationality: "American",
@@ -23,7 +23,7 @@ const database = {
     },
     brandImage: "./images/brand-image.jpg",
     aboutImage: "./images/about-image.jpg",
-    aboutImageLg: "./images/about-image-lg.jpg",
+    aboutImageLg: "./images/about-image.jpg",
     cvfile: "./files/empty.pdf",
   },
   services: [
@@ -121,7 +121,7 @@ const database = {
       id: 1,
       title: "Memory Game",
       subtitle: "Game built entirely with javascript, css, and html.",
-      imageUrl: "https://i.imgur.com/bh8VxTc.png",
+      imageUrl: "./images/portfolio-image-1.jpg",
       largeImageUrl: ["./images/portfolio-image-1-lg.jpg"],
       url: "https://dribbble.com",
     },
@@ -129,7 +129,7 @@ const database = {
       id: 2,
       title: "Pawpals",
       subtitle: "Social Media platform for dogs and dog lovers.",
-      imageUrl: "https://i.imgur.com/zFD0Hq6.png",
+      imageUrl: "",
       largeImageUrl: [
         "./images/portfolio-image-4-lg.jpg",
         "./images/portfolio-image-4-lg2.jpg",
