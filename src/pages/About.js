@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import Slider from "react-slick";
 import FsLightbox from "fslightbox-react";
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
-import Service from '../components/Service';
-import Testimonial from '../components/Testimonial';
+import Service from "../components/Service";
+import Testimonial from "../components/Testimonial";
 
-function About(){
+function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
@@ -30,32 +30,29 @@ function About(){
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
-    ]
+    ],
   };
 
   const handleToggler = (event) => {
     setToggler({
-      toggler: event
-    })
-  }
+      toggler: event,
+    });
+  };
 
-  useEffect(() =>{
-    axios.get('/api/information')
-      .then(response =>{
-        setInformation(response.data)
-      })
-    axios.get('/api/services')
-      .then(response =>{
-        setServices(response.data)
-      })
-    axios.get('/api/reviews')
-      .then(response =>{
-        setReviews(response.data)
-      })
-  }, [])
+  useEffect(() => {
+    axios.get("/api/information").then((response) => {
+      setInformation(response.data);
+    });
+    axios.get("/api/services").then((response) => {
+      setServices(response.data);
+    });
+    axios.get("/api/reviews").then((response) => {
+      setReviews(response.data);
+    });
+  }, []);
 
   return (
     <Layout>
@@ -85,37 +82,56 @@ function About(){
                   I am <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                  Born and raised in California. I am a dedicated and determined
+                  full stack web developer. Works well with others, with a
+                  background in customer service, leadership, and detail
+                  oriented work.
                 </p>
                 <ul>
-                  {!information.name ? null : <li>
-                    <b>Full Name</b> {information.name}
-                  </li>}
-                  {!information.age ? null : <li>
-                    <b>Age</b> {information.age} Years
-                  </li>}
-                  {!information.phone ? null : <li>
-                    <b>Phone</b> {information.phone}
-                  </li>}
-                  {!information.nationality ? null : <li>
-                    <b>Nationality</b> {information.nationality}
-                  </li>}
-                  {!information.language ? null : <li>
-                    <b>Languages</b> {information.language}
-                  </li>}
-                  {!information.email ? null : <li>
-                    <b>Email</b> {information.email}
-                  </li>}
-                  {!information.address ? null : <li>
-                    <b>Address</b> {information.address}
-                  </li>}
-                  {!information.freelanceStatus ? null : <li>
-                    <b>Freelance</b> {information.freelanceStatus}
-                  </li>}
+                  {!information.name ? null : (
+                    <li>
+                      <b>Full Name</b> {information.name}
+                    </li>
+                  )}
+                  {!information.age ? null : (
+                    <li>
+                      <b>Age</b> {information.age} Years
+                    </li>
+                  )}
+                  {!information.phone ? null : (
+                    <li>
+                      <b>Phone</b> {information.phone}
+                    </li>
+                  )}
+                  {!information.nationality ? null : (
+                    <li>
+                      <b>Nationality</b> {information.nationality}
+                    </li>
+                  )}
+                  {!information.language ? null : (
+                    <li>
+                      <b>Languages</b> {information.language}
+                    </li>
+                  )}
+                  {!information.email ? null : (
+                    <li>
+                      <b>Email</b> {information.email}
+                    </li>
+                  )}
+                  {!information.address ? null : (
+                    <li>
+                      <b>Address</b> {information.address}
+                    </li>
+                  )}
+                  {!information.freelanceStatus ? null : (
+                    <li>
+                      <b>Freelance</b> {information.freelanceStatus}
+                    </li>
+                  )}
                 </ul>
-                <a href={information.cvfile} className="mi-button">Download CV</a>
+                <a href={information.cvfile} className="mi-button">
+                  Download CV
+                </a>
               </div>
             </div>
           </div>
@@ -126,9 +142,12 @@ function About(){
           <Sectiontitle title="Services" />
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
-              {services.map(service => (
-                <div className="col-lg-4 col-md-6 col-12 mt-30" key={service.title}>
-                  <Service content={service}/>
+              {services.map((service) => (
+                <div
+                  className="col-lg-4 col-md-6 col-12 mt-30"
+                  key={service.title}
+                >
+                  <Service content={service} />
                 </div>
               ))}
             </div>
@@ -141,8 +160,8 @@ function About(){
           <div className="row justify-content-center">
             <div className="col-12">
               <Slider className="mi-testimonial-slider" {...sliderSettings}>
-                {reviews.map(review =>(
-                  <Testimonial key={review.id} content={review}/>
+                {reviews.map((review) => (
+                  <Testimonial key={review.id} content={review} />
                 ))}
               </Slider>
             </div>
