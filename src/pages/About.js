@@ -1,40 +1,40 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import FsLightbox from "fslightbox-react";
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Service from "../components/Service";
-import Testimonial from "../components/Testimonial";
+// import Testimonial from "../components/Testimonial";
 
 function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
-  const [reviews, setReviews] = useState([]);
+  // const [reviews, setReviews] = useState([]);
 
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnHover: true,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const sliderSettings = {
+  //   dots: false,
+  //   infinite: true,
+  //   arrows: false,
+  //   speed: 500,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  //   autoplay: true,
+  //   autoplaySpeed: 6000,
+  //   pauseOnHover: true,
+  //   adaptiveHeight: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   const handleToggler = (event) => {
     setToggler({
@@ -49,9 +49,9 @@ function About() {
     axios.get("/api/services").then((response) => {
       setServices(response.data);
     });
-    axios.get("/api/reviews").then((response) => {
-      setReviews(response.data);
-    });
+    // axios.get("/api/reviews").then((response) => {
+    //   setReviews(response.data);
+    // });
   }, []);
 
   return (
@@ -154,7 +154,11 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      {/* <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Reviews" />
           <div className="row justify-content-center">
@@ -167,7 +171,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 }
