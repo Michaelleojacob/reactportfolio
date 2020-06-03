@@ -18,7 +18,7 @@ function BlogDetails(props) {
       .catch((err) => console.log(err));
   }, [content, blogFile]);
 
-  const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
+  const disqusShortname = "michael-react"; //found in your Disqus.com dashboard
   const disqusConfig = {
     url: "https://michaelleojacob.github.io/reactportfolio/", //Homepage link of this site.
     identifier: blogId,
