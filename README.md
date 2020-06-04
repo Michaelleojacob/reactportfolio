@@ -1,6 +1,6 @@
 # Project Title
 
-Michael Jacob ReactJS portfolio
+Michael Jacob ReactJS Portfolio
 
 ## Deployed app found at:
 
