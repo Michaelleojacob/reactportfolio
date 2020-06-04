@@ -323,7 +323,7 @@ const database = {
         position: "Ramp Supervisor",
         company: "Delta Airlines",
         details:
-          "Lead a team of 10 or less people to carry out the tasks of each  day. We made sure every bag was accounted for, every crew member had a role and could carry out their part of the operation. We worked as a team to ensure every flight went smoothly. ",
+          "Led a team of 10 or less people to carry out the tasks of each  day. We made sure every bag was accounted for, every crew member had a role and could carry out their part of the operation. We worked as a team to ensure every flight went smoothly. ",
       },
     ],
     educationExperience: [
