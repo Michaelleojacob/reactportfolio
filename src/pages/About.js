@@ -129,8 +129,15 @@ function About() {
                     </li>
                   )}
                 </ul>
-                <a href={information.cvfile} className="mi-button">
-                  Download CV
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={
+                    "https://docs.google.com/document/d/1IKuZGnUDewQtMgQoVU7V7UU_KB_3J8hG9FaaDlPm4oY/edit"
+                  }
+                  className="mi-button"
+                >
+                  resume Link
                 </a>
               </div>
             </div>
