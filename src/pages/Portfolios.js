@@ -32,7 +32,7 @@ function Portfolios() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Portfolios" />
+          <Sectiontitle title="Apps" />
           <PortfoliosView portfolios={currentPortfolios} />
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination

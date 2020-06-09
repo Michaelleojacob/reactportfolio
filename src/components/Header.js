@@ -51,7 +51,7 @@ function Header() {
           </li>
           <li>
             <NavLink to="/reactportfolio/portfolios">
-              <span>portfolios</span>
+              <span>Apps</span>
             </NavLink>
           </li>
           {/* <li>

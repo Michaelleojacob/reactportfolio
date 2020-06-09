@@ -4,7 +4,7 @@ const database = {
   information: {
     name: "Michael Jacob",
     aboutContent:
-      "Born and raised in California. I am a dedicated and determined full stack web developer. Works well with others, with a background in customer service, leadership, and detail oriented work.",
+      "Born and raised in California. I am a dedicated and determined full stack web developer. ",
     age: 27,
     phone: "619-871-1891",
     nationality: "American",
@@ -31,13 +31,13 @@ const database = {
       title: "Web Design",
       icon: "color-pallet",
       details:
-        "Pixel perfect design. User friendly focused interface design. Clean, sleek, and visually pleasing",
+        "Pixel perfect design. User friendly interface design. Clean, sleek, and visually pleasing",
     },
     {
       title: "Web Development",
       icon: "code",
       details:
-        "User first approached logic. Making sure the user can interact with the website or app easily is the goal.",
+        "User first. Making sure the user can interact with the website or app easily is my top priority.",
     },
     {
       title: "Mobile Applications",
@@ -146,7 +146,7 @@ const database = {
       id: 4,
       title: "User Directory",
       subtitle:
-        "React app that allows a user to sort through     a     list    of individuals. Was a good exercise is react, using an API, and making a search field.",
+        "React app that allows a user to sort through a list of individuals. Was a good exercise is react, using an API, and making a search field.",
       imageUrl: "./images/portfolio-image-3.jpg",
       largeImageUrl: ["./images/portfolio-image-3-lg.jpg"],
       url: "#",
@@ -307,7 +307,7 @@ const database = {
         position: "Lab Technician",
         company: "Team Braces",
         details:
-          "Handled making dental appliances. Essex and wire retainers tailored to each individual patient. Worked mostly independently, but the team also constantly worked together to ensure the patient get the best possible treatment. Taught me valuable customer service skills, and sharpen my attention to every last detail. ",
+          "Handled making dental appliances. Essex and wire retainers tailored to each individual patient. Worked mostly independently, but as a team we worked together to ensure the patient got the best possible treatment.",
       },
       {
         id: 2,
@@ -315,7 +315,7 @@ const database = {
         position: "Security guard",
         company: "Elite Security",
         details:
-          "Worked as a security guard, flexible hours so I could continue to work as a lab tech. I handled and contained massive crowds. Worked to maintain the peace. This job took incredible decision making and cooperative skills.",
+          "This job taught me to be polite and approachable at all times, flexible and responsible approach to the job. The ability to be patient regardless of the situation. Good verbal and written communication skills. But most importantly it was expected to be a trustworthy character",
       },
       {
         id: 3,
@@ -323,7 +323,7 @@ const database = {
         position: "Ramp Supervisor",
         company: "Delta Airlines",
         details:
-          "Led a team of 10 or less people to carry out the tasks of each  day. We made sure every bag was accounted for, every crew member had a role and could carry out their part of the operation. We worked as a team to ensure every flight went smoothly. ",
+          "Led a team of 10 people to carry out the tasks of each  day. My job was to ensure we worked together efficiently and effectively to ensure every flight went smoothly and on time.",
       },
     ],
     educationExperience: [
@@ -333,7 +333,7 @@ const database = {
         graduation: "Computer Science Student",
         university: "Udemy, Leetcode, and CodeCademy",
         details:
-          "Constant and consistent practice to further hone and practice programming and problem solving.",
+          "Constant and consistent practice to further hone programming and problem solving abilities.",
       },
       {
         id: 2,
@@ -341,15 +341,14 @@ const database = {
         graduation: "Student, full stack web developer",
         university: "UCSD extention full stack web developer bootcamp",
         details:
-          "Rigorous and intense. UCSD's full time bootcamp program teaches an immense amount of skills, libraries, tools, critical thinking and problem solving. This course covered HTML, CSS, Javascript, Express, MySQL, MongoDB, and ReactJS. Overall I'm very proud of the work and skilled gained from this class.",
+          "Rigorous and intense. UCSD's full time bootcamp program teaches an immense amount of skills, libraries, tools, critical thinking and problem solving. This course covered HTML, CSS, Javascript, Express, MySQL, MongoDB, and ReactJS. Overall I'm proud of the work and skills gained from this class.",
       },
       {
         id: 3,
         year: "2011",
-        graduation: "Higher Schoold Graduation",
+        graduation: "High School",
         university: "Bonita Vista High School",
-        details:
-          "Some college. I went on to get real world work experience. I then decided to get a security license. While also working towards obtaining compTIA A+ certifications in order to work towards becoming a sys admin. I found this was not my path. And went on to pursue other adventures and skills.",
+        details: "",
       },
     ],
   },

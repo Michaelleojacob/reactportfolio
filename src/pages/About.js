@@ -79,13 +79,11 @@ function About() {
             <div className="col-lg-6">
               <div className="mi-about-content">
                 <h3>
-                  I am <span className="color-theme">{information.name}</span>
+                  <span className="color-theme">Technology</span>
                 </h3>
                 <p>
-                  Born and raised in California. I am a dedicated and determined
-                  full stack web developer. Works well with others, with a
-                  background in customer service, leadership, and detail
-                  oriented work.
+                  I have experience working with: HTML, CSS, Javascript, Jquery,
+                  Bootstrap, Axios, Express, MySQL, MongoDB, and ReactJS.
                 </p>
                 <ul>
                   {!information.name ? null : (
@@ -95,7 +93,7 @@ function About() {
                   )}
                   {!information.age ? null : (
                     <li>
-                      <b>Age</b> {information.age} Years
+                      <b>Age</b> {information.age}
                     </li>
                   )}
                   {!information.phone ? null : (
@@ -133,7 +131,7 @@ function About() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href={
-                    "https://docs.google.com/document/d/1IKuZGnUDewQtMgQoVU7V7UU_KB_3J8hG9FaaDlPm4oY/edit"
+                    "https://docs.google.com/document/d/1IKuZGnUDewQtMgQoVU7V7UU_KB_3J8hG9FaaDlPm4oY/edit?usp=sharing"
                   }
                   className="mi-button"
                 >
