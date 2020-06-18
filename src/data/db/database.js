@@ -10,7 +10,7 @@ const database = {
     nationality: "American",
     language: "English",
     email: "michaelleojacob@gmail.com",
-    address: "2013 Woodland gln, CA, 92027",
+    address: "Escondido, CA, 92027",
     freelanceStatus: "Available",
     socialLinks: {
       facebook: "",
@@ -494,7 +494,7 @@ const database = {
   contactInfo: {
     phoneNumbers: ["619-871-1891", ""],
     emailAddress: ["michaelleojacob@gmail.com", ""],
-    address: "2013 Woodland Gln, Escondido, CA, 92027",
+    address: "Escondido, CA, 92027",
   },
 };
 
