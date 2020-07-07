@@ -12,3 +12,11 @@ https://michaelleojacob.github.io/reactportfolio/
 - ReactJS
 - CSS
 - Jquery
+
+## How to use
+
+![Features](https://i.imgur.com/taAYnLJ.gif)
+
+## Links
+
+![Links](https://i.imgur.com/vHQbVRy.gifv)
