@@ -307,7 +307,7 @@ const database = {
         position: "Lab Technician",
         company: "Team Braces",
         details:
-          "Handled making dental appliances. Essex and wire retainers tailored to each individual patient. Worked mostly independently, but as a team we worked together to ensure the patient got the best possible treatment.",
+          "Tailor made Models, Essex and Wire-retainers to each individual patient. My role was important for the beginning and ending of treatment. I crafted a working model to study from, and to ensure any progress the patient made from their treatment was kept long term. I’m proud to have helped so many people find confidence and a smile they would be happy with.",
       },
       {
         id: 2,
