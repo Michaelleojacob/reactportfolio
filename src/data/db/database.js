@@ -315,7 +315,7 @@ const database = {
         position: "Security guard",
         company: "Elite Security",
         details:
-          "This job taught me to be polite and approachable at all times, flexible and responsible approach to the job. The ability to be patient regardless of the situation. Good verbal and written communication skills. But most importantly it was expected to be a trustworthy character",
+          "This job taught me to be polite and approachable at all times, flexible and responsible approach to the job. The ability to be patient regardless of the situation. Good verbal and written communication skills. But most importantly it was expected to be a trustworthy character.",
       },
       {
         id: 3,
