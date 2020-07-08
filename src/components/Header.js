@@ -75,6 +75,14 @@ function Header() {
             >
               michaelleojacob
             </a>
+            <br></br>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/Michaelleojacob/reactportfolio"
+            >
+              Portfolio Github Repository
+            </a>
           </b>
         </p>
       </div>
