@@ -4,40 +4,66 @@ import FsLightbox from "fslightbox-react";
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const {title, subtitle, imageUrl, largeImageUrl, url} = props.content;
-  
+  const {
+    title,
+    subtitle,
+    imageUrl,
+    largeImageUrl,
+    url,
+    repo,
+    description,
+  } = props.content;
+
   const handleToggler = (value) => {
     setToggler(value);
-  }
+  };
 
   return (
-    <div className={props.isVisible ? "mi-portfolio mi-portfolio-visible" : "mi-portfolio"}>
+    <div
+      className={
+        props.isVisible ? "mi-portfolio mi-portfolio-visible" : "mi-portfolio"
+      }
+    >
       <div className="mi-portfolio-image">
         <img src={imageUrl} alt={title} />
         <ul>
-          {!largeImageUrl ? null : <li>
-            <button onClick={() => handleToggler(!toggler)}>
-              <Icon.ZoomIn/>
-            </button>
-          </li>}
-          { url ? <li>
-            <a rel="noopener noreferrer" target="_blank" href={url}>
-              <Icon.Link/>
-            </a>
-          </li> : null}
+          {!largeImageUrl ? null : (
+            <li>
+              <button onClick={() => handleToggler(!toggler)}>
+                <Icon.ZoomIn />
+              </button>
+            </li>
+          )}
+          {url ? (
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href={url}>
+                <Icon.Link />
+              </a>
+            </li>
+          ) : null}
+          {repo ? (
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href={repo}>
+                <Icon.GitHub />
+              </a>
+            </li>
+          ) : null}
         </ul>
       </div>
-      {!url ? <h5>{title}</h5> : <h5>
-        <a rel="noopener noreferrer" target="_blank" href={url}>
-          {title}
-        </a>
-      </h5>}
+      {!url ? (
+        <h5>{title}</h5>
+      ) : (
+        <h5>
+          <a rel="noopener noreferrer" target="_blank" href={url}>
+            {title}
+          </a>
+        </h5>
+      )}
+      {description ? <h6>{description}</h6> : null}
       {subtitle ? <h6>{subtitle}</h6> : null}
-      {!largeImageUrl ? null : <FsLightbox
-        toggler={toggler}
-        sources={largeImageUrl}
-        />
-      }
+      {!largeImageUrl ? null : (
+        <FsLightbox toggler={toggler} sources={largeImageUrl} />
+      )}
     </div>
   );
 }
