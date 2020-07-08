@@ -16,7 +16,3 @@ https://michaelleojacob.github.io/reactportfolio/
 ## How to use
 
 ![Features](https://i.imgur.com/taAYnLJ.gif)
-
-## Links
-
-![Links](https://i.imgur.com/vHQbVRy.gif)
