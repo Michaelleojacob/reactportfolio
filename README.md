@@ -19,4 +19,4 @@ https://michaelleojacob.github.io/reactportfolio/
 
 ## Links
 
-![Links](https://i.imgur.com/vHQbVRy.gifv)
+![Links](https://i.imgur.com/vHQbVRy.gif)
