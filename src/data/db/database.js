@@ -151,13 +151,13 @@ const database = {
       largeImageUrl: ["./images/portfolio-image-3-lg.jpg"],
       url: "#",
     },
-    {
-      id: 5,
-      title: "More deployed apps coming soon!",
-      subtitle: "Coming soon!",
-      imageUrl: "./images/portfolio-image-5.jpg",
-      largeImageUrl: ["./images/portfolio-image-5-lg.jpg"],
-    },
+    // {
+    // id: 5,
+    // title: "More deployed apps coming soon!",
+    // subtitle: "Coming soon!",
+    // imageUrl: "./images/portfolio-image-5.jpg",
+    // largeImageUrl: ["./images/portfolio-image-5-lg.jpg"],
+    // },
     // {
     //   id: 6,
     //   title: "Pendrive",
