@@ -82,8 +82,13 @@ function About() {
                   <span className="color-theme">Technology</span>
                 </h3>
                 <p>
-                  I have experience working with: HTML, CSS, Javascript, Jquery,
-                  Bootstrap, Axios, Express, MySQL, MongoDB, and ReactJS.
+                  HTML 5, CSS 3, Javascript, Git, Heroku, JQuery, Node.js,
+                  MySQL, NoSQL, MongoDB, Mongoose, Express, Handlebars.js &
+                  ReactJS
+                </p>
+                <p>
+                  CSS frameworks: Bootstrap, Bulma, Material-UI, UIkit,
+                  Materialize
                 </p>
                 <ul>
                   {!information.name ? null : (

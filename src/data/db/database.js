@@ -317,7 +317,7 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2011 - 2019",
+        year: "2011 - Present",
         position: "Lab Technician",
         company: "Team Braces",
         details:
@@ -343,7 +343,7 @@ const database = {
     educationExperience: [
       {
         id: 1,
-        year: "2019 - present",
+        year: "2019 - Present",
         graduation: "Computer Science Student",
         university: "Udemy, Leetcode, and CodeCademy",
         details:
