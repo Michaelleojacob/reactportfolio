@@ -8,7 +8,7 @@
     "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.7",
     "fslightbox-react": "^1.4.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-feather": "^2.0.3",
