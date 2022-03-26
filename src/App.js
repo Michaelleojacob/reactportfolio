@@ -1,12 +1,12 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import "./App.scss";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Resumes from "./pages/Resumes";
-import Portfolios from "./pages/Portfolios";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import './App.scss';
+import Home from './pages/Home';
+import About from './pages/About';
+import Resumes from './pages/Resumes';
+import Portfolios from './pages/Portfolios';
+import Contact from './pages/Contact';
 // import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
 // import BlogDetails from "./pages/BlogDetails";
 
 function App() {
