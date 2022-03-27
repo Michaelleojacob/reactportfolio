@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 // import Slider from "react-slick";
-import FsLightbox from "fslightbox-react";
-import * as Icon from "react-feather";
-import Sectiontitle from "../components/Sectiontitle";
-import Layout from "../components/Layout";
-import Service from "../components/Service";
+import FsLightbox from 'fslightbox-react';
+import * as Icon from 'react-feather';
+import Sectiontitle from '../components/Sectiontitle';
+import Layout from '../components/Layout';
+import Service from '../components/Service';
 // import Testimonial from "../components/Testimonial";
 
 function About() {
   const [toggler, setToggler] = useState(false);
-  const [information, setInformation] = useState("");
+  const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
   // const [reviews, setReviews] = useState([]);
 
@@ -43,10 +43,10 @@ function About() {
   };
 
   useEffect(() => {
-    axios.get("/api/information").then((response) => {
+    axios.get('/api/information').then((response) => {
       setInformation(response.data);
     });
-    axios.get("/api/services").then((response) => {
+    axios.get('/api/services').then((response) => {
       setServices(response.data);
     });
     // axios.get("/api/reviews").then((response) => {
@@ -82,14 +82,17 @@ function About() {
                   <span className="color-theme">Technology</span>
                 </h3>
                 <p>
-                  HTML 5, CSS 3, Javascript, Git, Heroku, JQuery, Node.js,
-                  MySQL, NoSQL, MongoDB, Mongoose, Express, Handlebars.js &
-                  ReactJS
+                  HTML 5, CSS 3, Javascript, React, Firebase, Git, Github,
+                  Heroku, JQuery, Node.js, MySQL, NoSQL, MongoDB, Mongoose,
+                  Express, Handlebars.js
                 </p>
-                <p>
-                  CSS frameworks: Bootstrap, Bulma, Material-UI, UIkit,
-                  Materialize
-                </p>
+                <h3>
+                  <span className="color-theme">Frameworks</span>
+                </h3>
+                <p>Bootstrap, Bulma, Material-UI, UIkit, Materialize</p>
+                <h3>
+                  <span className="color-theme">Info</span>
+                </h3>
                 <ul>
                   {!information.name ? null : (
                     <li>
@@ -126,17 +129,17 @@ function About() {
                       <b>Address</b> {information.address}
                     </li>
                   )}
-                  {!information.freelanceStatus ? null : (
+                  {/* {!information.freelanceStatus ? null : (
                     <li>
                       <b>Freelance</b> {information.freelanceStatus}
                     </li>
-                  )}
+                  )} */}
                 </ul>
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
                   href={
-                    "https://docs.google.com/document/d/1IKuZGnUDewQtMgQoVU7V7UU_KB_3J8hG9FaaDlPm4oY/edit?usp=sharing"
+                    'https://docs.google.com/document/d/1h6m26XQUQqSZE3B8LQjr5pbPaYWTVqfQCXHEbICvCjc/edit?usp=sharing'
                   }
                   className="mi-button"
                 >
