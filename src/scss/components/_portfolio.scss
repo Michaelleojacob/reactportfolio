@@ -10,9 +10,9 @@
   &-image {
     display: block;
     position: relative;
-    
+
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 15px;
       top: 15px;
@@ -43,7 +43,8 @@
         display: inline-block;
         margin: 0 7px;
 
-        a, button {
+        a,
+        button {
           display: inline-block;
           height: 45px;
           width: 45px;
@@ -55,11 +56,11 @@
           color: #ffffff;
           border: 1px solid $color-body;
           border-radius: 100px;
-         outline: none; 
+          outline: none;
           font-size: 1.25rem;
           transition: $transition;
 
-          svg{
+          svg {
             height: 100%;
           }
 
@@ -93,19 +94,19 @@
     margin-bottom: 0;
   }
 
-  &:hover &-image{
-    &::before{
+  &:hover &-image {
+    &::before {
       transform: scaleX(1);
     }
 
-    ul{
+    ul {
       visibility: visible;
       opacity: 1;
       margin-top: 0;
     }
   }
 
-  &.mi-portfolio-visible{
+  &.mi-portfolio-visible {
     visibility: visible;
     opacity: 1;
   }

@@ -1,18 +1,11 @@
-import React, { useState } from "react";
-import * as Icon from "react-feather";
-import FsLightbox from "fslightbox-react";
+import React, { useState } from 'react';
+import * as Icon from 'react-feather';
+import FsLightbox from 'fslightbox-react';
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const {
-    title,
-    subtitle,
-    imageUrl,
-    largeImageUrl,
-    url,
-    repo,
-    description,
-  } = props.content;
+  const { title, subtitle, imageUrl, largeImageUrl, url, repo, description } =
+    props.content;
 
   const handleToggler = (value) => {
     setToggler(value);
@@ -21,7 +14,7 @@ function Portfolio(props) {
   return (
     <div
       className={
-        props.isVisible ? "mi-portfolio mi-portfolio-visible" : "mi-portfolio"
+        props.isVisible ? 'mi-portfolio mi-portfolio-visible' : 'mi-portfolio'
       }
     >
       <div className="mi-portfolio-image">
