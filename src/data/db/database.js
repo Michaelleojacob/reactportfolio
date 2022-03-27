@@ -176,7 +176,7 @@ const database = {
       subtitle: 'js promises, and fetch requests',
       imageUrl: './images/portfolio-image-6.jpg',
       largeImageUrl: ['./images/portfolio-image-6-lg.jpg'],
-      url: ['https://github.com/Michaelleojacob/weatherv1'],
+      url: ['https://michaelleojacob.github.io/weatherv1'],
       repo: ['https://github.com/Michaelleojacob/weatherv1'],
     },
     // {
