@@ -8,7 +8,6 @@
     "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.7",
     "fslightbox-react": "^1.4.0",
-    "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-feather": "^2.0.3",
@@ -20,6 +19,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.1",
     "react-slick": "^0.25.2",
+    "sass": "^1.49.9",
     "shave": "^2.5.6",
     "slick-carousel": "^1.8.1"
   },
