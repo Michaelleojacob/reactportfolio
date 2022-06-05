@@ -3,7 +3,7 @@ import Mock from '../mock';
 const database = {
   information: {
     name: 'Michael Jacob',
-    aboutContent1: 'Full Stack Engineer | Front-end Dev | Back-end Dev',
+    aboutContent1: 'Full Stack Engineer | Front-end Dev | Backnd Dev',
     aboutContent2: 'I create and solve problems in the virtual space',
     aboutContent3: 'Mostly just click buttons.',
     age: 29,
@@ -12,7 +12,7 @@ const database = {
     language: 'English',
     email: 'michaelleojacob@gmail.com',
     address: 'San Diego, CA',
-    freelanceStatus: 'Available',
+    // freelanceStatus: 'Available',
     socialLinks: {
       facebook: '',
       twitter: '',
@@ -29,10 +29,9 @@ const database = {
   },
   services: [
     {
-      title: 'Web Design',
-      icon: 'brush-alt',
-      details:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.',
+      title: 'React Developer',
+      icon: 'react',
+      details: '',
     },
     {
       title: 'Web Development',

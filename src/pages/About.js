@@ -1,18 +1,18 @@
-import axios from "axios";
-import FsLightbox from "fslightbox-react";
-import React, { useEffect, useState } from "react";
-import * as Icon from "react-feather";
-import { Helmet } from "react-helmet";
-import ProgressiveImage from "react-progressive-image";
-import Slider from "react-slick";
-import Layout from "../components/Layout";
-import Sectiontitle from "../components/Sectiontitle";
-import Service from "../components/Service";
-import Testimonial from "../components/Testimonial";
+import axios from 'axios';
+import FsLightbox from 'fslightbox-react';
+import React, { useEffect, useState } from 'react';
+import * as Icon from 'react-feather';
+import { Helmet } from 'react-helmet';
+import ProgressiveImage from 'react-progressive-image';
+import Slider from 'react-slick';
+import Layout from '../components/Layout';
+import Sectiontitle from '../components/Sectiontitle';
+import Service from '../components/Service';
+import Testimonial from '../components/Testimonial';
 
 function About() {
   const [toggler, setToggler] = useState(false);
-  const [information, setInformation] = useState("");
+  const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
 
@@ -43,13 +43,13 @@ function About() {
   };
 
   useEffect(() => {
-    axios.get("/api/information").then((response) => {
+    axios.get('/api/information').then((response) => {
       setInformation(response.data);
     });
-    axios.get("/api/services").then((response) => {
+    axios.get('/api/services').then((response) => {
       setServices(response.data);
     });
-    axios.get("/api/reviews").then((response) => {
+    axios.get('/api/reviews').then((response) => {
       setReviews(response.data);
     });
   }, []);
@@ -57,31 +57,27 @@ function About() {
   return (
     <Layout>
       <Helmet>
-        <title>About - Chester React Personal Portfolio Template</title>
-        <meta
-          name="description"
-          content="Chester React Personal Portfolio Template About Page"
-        />
+        <title>About</title>
+        <meta name='About' content='About' />
       </Helmet>
-      <div className="mi-about-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="About Me" />
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="mi-about-image">
+      <div className='mi-about-area mi-section mi-padding-top'>
+        <div className='container'>
+          <Sectiontitle title='About Me' />
+          <div className='row align-items-center'>
+            <div className='col-lg-6'>
+              <div className='mi-about-image'>
                 <ProgressiveImage
                   src={information.aboutImage}
-                  placeholder="/images/about-image-placeholder.png"
-                >
+                  placeholder='/images/about-image-placeholder.png'>
                   {(src) => (
                     <img
                       src={src}
-                      alt="aboutimage"
+                      alt='aboutimage'
                       onClick={() => handleToggler(!toggler)}
                     />
                   )}
                 </ProgressiveImage>
-                <span className="mi-about-image-icon">
+                <span className='mi-about-image-icon'>
                   <Icon.ZoomIn />
                 </span>
                 <FsLightbox
@@ -90,15 +86,15 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="mi-about-content">
+            <div className='col-lg-6'>
+              <div className='mi-about-content'>
                 <h3>
-                  I am <span className="color-theme">{information.name}</span>
+                  I am <span className='color-theme'>{information.name}</span>
                 </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                  Software Engineer and Full Stack engineer. Interested in
+                  Front-end and Back-end work. I enjoy solving difficult
+                  problems with elegant but effective solutions.
                 </p>
                 <ul>
                   {!information.name ? null : (
@@ -136,13 +132,13 @@ function About() {
                       <b>Address</b> {information.address}
                     </li>
                   )}
-                  {!information.freelanceStatus ? null : (
+                  {/* {!information.freelanceStatus ? null : (
                     <li>
                       <b>Freelance</b> {information.freelanceStatus}
                     </li>
-                  )}
+                  )} */}
                 </ul>
-                <a href={information.cvfile} className="mi-button">
+                <a href={information.cvfile} className='mi-button'>
                   Download CV
                 </a>
               </div>
@@ -150,16 +146,15 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mi-service-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="Services" />
-          <div className="mi-service-wrapper">
-            <div className="row mt-30-reverse">
+      <div className='mi-service-area mi-section mi-padding-top'>
+        <div className='container'>
+          <Sectiontitle title='Services' />
+          <div className='mi-service-wrapper'>
+            <div className='row mt-30-reverse'>
               {services.map((service) => (
                 <div
-                  className="col-lg-4 col-md-6 col-12 mt-30"
-                  key={service.title}
-                >
+                  className='col-lg-4 col-md-6 col-12 mt-30'
+                  key={service.title}>
                   <Service content={service} />
                 </div>
               ))}
@@ -167,12 +162,12 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Reviews" />
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <Slider className="mi-testimonial-slider" {...sliderSettings}>
+      {/* <div className='mi-review-area mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Reviews' />
+          <div className='row justify-content-center'>
+            <div className='col-12'>
+              <Slider className='mi-testimonial-slider' {...sliderSettings}>
                 {reviews.map((review) => (
                   <Testimonial key={review.id} content={review} />
                 ))}
@@ -180,7 +175,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 }
