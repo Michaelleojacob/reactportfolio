@@ -1,72 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-// import Slider from "react-slick";
-import FsLightbox from 'fslightbox-react';
-import * as Icon from 'react-feather';
-import Sectiontitle from '../components/Sectiontitle';
-import Layout from '../components/Layout';
-import Service from '../components/Service';
-// import Testimonial from "../components/Testimonial";
+import axios from "axios";
+import FsLightbox from "fslightbox-react";
+import React, { useEffect, useState } from "react";
+import * as Icon from "react-feather";
+import { Helmet } from "react-helmet";
+import ProgressiveImage from "react-progressive-image";
+import Slider from "react-slick";
+import Layout from "../components/Layout";
+import Sectiontitle from "../components/Sectiontitle";
+import Service from "../components/Service";
+import Testimonial from "../components/Testimonial";
 
 function About() {
   const [toggler, setToggler] = useState(false);
-  const [information, setInformation] = useState('');
+  const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
-  // const [reviews, setReviews] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
-  // const sliderSettings = {
-  //   dots: false,
-  //   infinite: true,
-  //   arrows: false,
-  //   speed: 500,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  //   autoplay: true,
-  //   autoplaySpeed: 6000,
-  //   pauseOnHover: true,
-  //   adaptiveHeight: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   const handleToggler = (event) => {
-    setToggler({
-      toggler: event,
-    });
+    setToggler(!toggler);
   };
 
   useEffect(() => {
-    axios.get('/api/information').then((response) => {
+    axios.get("/api/information").then((response) => {
       setInformation(response.data);
     });
-    axios.get('/api/services').then((response) => {
+    axios.get("/api/services").then((response) => {
       setServices(response.data);
     });
-    // axios.get("/api/reviews").then((response) => {
-    //   setReviews(response.data);
-    // });
+    axios.get("/api/reviews").then((response) => {
+      setReviews(response.data);
+    });
   }, []);
 
   return (
     <Layout>
+      <Helmet>
+        <title>About - Chester React Personal Portfolio Template</title>
+        <meta
+          name="description"
+          content="Chester React Personal Portfolio Template About Page"
+        />
+      </Helmet>
       <div className="mi-about-area mi-section mi-padding-top">
         <div className="container">
           <Sectiontitle title="About Me" />
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="mi-about-image">
-                <img
+                <ProgressiveImage
                   src={information.aboutImage}
-                  alt="about"
-                  onClick={() => handleToggler(!toggler)}
-                />
+                  placeholder="/images/about-image-placeholder.png"
+                >
+                  {(src) => (
+                    <img
+                      src={src}
+                      alt="aboutimage"
+                      onClick={() => handleToggler(!toggler)}
+                    />
+                  )}
+                </ProgressiveImage>
                 <span className="mi-about-image-icon">
                   <Icon.ZoomIn />
                 </span>
@@ -79,20 +93,13 @@ function About() {
             <div className="col-lg-6">
               <div className="mi-about-content">
                 <h3>
-                  <span className="color-theme">Technology</span>
+                  I am <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  HTML 5, CSS 3, Javascript, React, Firebase, Git, Github,
-                  Heroku, JQuery, Node.js, MySQL, NoSQL, MongoDB, Mongoose,
-                  Express, Handlebars.js
+                  I am a frontend web developer. I can provide clean code and
+                  pixel perfect design. I also make website more & more
+                  interactive with web animations.
                 </p>
-                <h3>
-                  <span className="color-theme">Frameworks</span>
-                </h3>
-                <p>Bootstrap, Bulma, Material-UI, UIkit, Materialize</p>
-                <h3>
-                  <span className="color-theme">Info</span>
-                </h3>
                 <ul>
                   {!information.name ? null : (
                     <li>
@@ -101,7 +108,7 @@ function About() {
                   )}
                   {!information.age ? null : (
                     <li>
-                      <b>Age</b> {information.age}
+                      <b>Age</b> {information.age} Years
                     </li>
                   )}
                   {!information.phone ? null : (
@@ -129,21 +136,14 @@ function About() {
                       <b>Address</b> {information.address}
                     </li>
                   )}
-                  {/* {!information.freelanceStatus ? null : (
+                  {!information.freelanceStatus ? null : (
                     <li>
                       <b>Freelance</b> {information.freelanceStatus}
                     </li>
-                  )} */}
+                  )}
                 </ul>
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={
-                    'https://docs.google.com/document/d/1h6m26XQUQqSZE3B8LQjr5pbPaYWTVqfQCXHEbICvCjc/edit?usp=sharing'
-                  }
-                  className="mi-button"
-                >
-                  resume Link
+                <a href={information.cvfile} className="mi-button">
+                  Download CV
                 </a>
               </div>
             </div>
@@ -167,11 +167,7 @@ function About() {
           </div>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      {/* <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
+      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Reviews" />
           <div className="row justify-content-center">
@@ -184,7 +180,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
   );
 }

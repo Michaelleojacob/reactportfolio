@@ -1,35 +1,47 @@
-import React, { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown/with-html";
-import axios from "axios";
 import Disqus from "disqus-react";
+import Markdown from "markdown-to-jsx";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 
 function BlogDetails(props) {
+  const params = useParams();
   const [content, setContent] = useState("");
-  const blogId = props.match.params.id;
-  const blogFile = props.match.params.title;
+  const blogId = params.id;
+  const blogFile = params.title;
+  const fileName = `${blogFile}.md`;
 
   useEffect(() => {
-    axios
-      .get(require(`../blog/${blogFile}.md`))
-      .then((result) => {
-        setContent(result.data);
+    import(`../blog/${fileName}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setContent(res))
+          .catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
-  }, [content, blogFile]);
+  });
 
-  const disqusShortname = "michael-react"; //found in your Disqus.com dashboard
+  const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
   const disqusConfig = {
-    url: "https://michaelleojacob.github.io/reactportfolio/", //Homepage link of this site.
+    url: "https://tf-react-chester.now.sh/", //Homepage link of this site.
     identifier: blogId,
     title: blogFile,
   };
 
   return (
     <Layout>
+      <Helmet>
+        <title>Blog Details - Chester React Personal Portfolio Template</title>
+        <meta
+          name="description"
+          content="Chester React Personal Portfolio Template Blog Details Page"
+        />
+      </Helmet>
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <ReactMarkdown source={content} escapeHtml={false}></ReactMarkdown>
+          <Markdown>{content}</Markdown>
           <div className="mi-blog-details-comments mt-30">
             <Disqus.DiscussionEmbed
               shortname={disqusShortname}

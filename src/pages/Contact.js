@@ -1,63 +1,62 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 import * as Icon from "react-feather";
-import Sectiontitle from "../components/Sectiontitle";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
+import Sectiontitle from "../components/Sectiontitle";
 
 function Contact() {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
   const [address, setAddress] = useState([]);
-  // const [formdata, setFormdata] = useState({
-  //   name: "",
-  //   email: "",
-  //   subject: "",
-  //   message: "",
-  // });
-  // const [error, setError] = useState(false);
-  // const [message, setMessage] = useState("");
+  const [formdata, setFormdata] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [error, setError] = useState(false);
+  const [message, setMessage] = useState("");
 
-  // const submitHandler = (event) => {
-  //   event.preventDefault();
-  //   if (!formdata.name) {
-  //     setError(true);
-  //     setMessage("Name is required");
-  //   } else if (!formdata.email) {
-  //     setError(true);
-  //     setMessage("Email is required");
-  //   } else if (!formdata.subject) {
-  //     setError(true);
-  //     setMessage("Subject is required");
-  //   } else if (!formdata.message) {
-  //     setError(true);
-  //     setMessage("Message is required");
-  //   } else {
-  //     setError(false);
-  //     setMessage(
-  //       "This is not functional. Please just send me an email or give me a call!"
-  //     );
-  //   }
-  // };
-  // const handleChange = (event) => {
-  //   setFormdata({
-  //     ...formdata,
-  //     [event.currentTarget.name]: event.currentTarget.value,
-  //   });
-  // };
-  // const numberFormatter = (number) => {
-  //   const phnNumber = number;
-  //   return phnNumber;
-  // };
+  const submitHandler = (event) => {
+    event.preventDefault();
+    if (!formdata.name) {
+      setError(true);
+      setMessage("Name is required");
+    } else if (!formdata.email) {
+      setError(true);
+      setMessage("Email is required");
+    } else if (!formdata.subject) {
+      setError(true);
+      setMessage("Subject is required");
+    } else if (!formdata.message) {
+      setError(true);
+      setMessage("Message is required");
+    } else {
+      setError(false);
+      setMessage("You message has been sent!!!");
+    }
+  };
+  const handleChange = (event) => {
+    setFormdata({
+      ...formdata,
+      [event.currentTarget.name]: event.currentTarget.value,
+    });
+  };
+  const numberFormatter = (number) => {
+    const phnNumber = number;
+    return phnNumber;
+  };
 
-  // const handleAlerts = () => {
-  //   if (error && message) {
-  //     return <div className="alert alert-danger mt-4">{message}</div>;
-  //   } else if (!error && message) {
-  //     return <div className="alert alert-success mt-4">{message}</div>;
-  //   } else {
-  //     return null;
-  //   }
-  // };
+  const handleAlerts = () => {
+    if (error && message) {
+      return <div className="alert alert-danger mt-4">{message}</div>;
+    } else if (!error && message) {
+      return <div className="alert alert-success mt-4">{message}</div>;
+    } else {
+      return null;
+    }
+  };
 
   useEffect(() => {
     axios.get("/api/contactinfo").then((response) => {
@@ -69,13 +68,20 @@ function Contact() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Contact - Chester React Personal Portfolio Template</title>
+        <meta
+          name="description"
+          content="Chester React Personal Portfolio Template Contact Page"
+        />
+      </Helmet>
       <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Contact Me" />
           <div className="row">
-            {/* <div className="col-lg-6">
-              <div className="mi-contact-formwrapper"> */}
-            {/* <h4>Get In Touch</h4>
+            <div className="col-lg-6">
+              <div className="mi-contact-formwrapper">
+                <h4>Get In Touch</h4>
                 <form
                   action="#"
                   className="mi-form mi-contact-form"
@@ -133,10 +139,10 @@ function Contact() {
                       Send Mail
                     </button>
                   </div>
-                </form> */}
-            {/* {handleAlerts()} */}
-            {/* </div>
-            </div> */}
+                </form>
+                {handleAlerts()}
+              </div>
+            </div>
             <div className="col-lg-6">
               <div className="mi-contact-info">
                 {!phoneNumbers ? null : (
@@ -148,10 +154,9 @@ function Contact() {
                       <h6>Phone</h6>
                       {phoneNumbers.map((phoneNumber) => (
                         <p key={phoneNumber}>
-                          <p>{phoneNumber}</p>
-                          {/* <a href={numberFormatter(phoneNumber)}>
+                          <a href={numberFormatter(phoneNumber)}>
                             {phoneNumber}
-                          </a> */}
+                          </a>
                         </p>
                       ))}
                     </div>
@@ -166,8 +171,7 @@ function Contact() {
                       <h6>Email</h6>
                       {emailAddress.map((email) => (
                         <p key={email}>
-                          <p>{email}</p>
-                          {/* <a href={`mailto:${email}`}>{email}</a> */}
+                          <a href={`mailto:${email}`}>{email}</a>
                         </p>
                       ))}
                     </div>

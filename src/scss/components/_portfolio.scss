@@ -1,5 +1,8 @@
-/*
+/**
+ * /*
  * Portfolio
+ *
+ * @format
  */
 
 .mi-portfolio {
@@ -12,7 +15,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 15px;
       top: 15px;
@@ -22,6 +25,10 @@
       transition: $transition;
       transform: scaleX(0);
       transform-origin: 0;
+    }
+
+    img {
+      width: 100%;
     }
 
     ul {

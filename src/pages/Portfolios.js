@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Sectiontitle from "../components/Sectiontitle";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
+import Sectiontitle from "../components/Sectiontitle";
 
 function Portfolios() {
   const [portfolios, setPortfoios] = useState([]);
@@ -11,10 +12,14 @@ function Portfolios() {
   const [portfoliosPerPage] = useState(9);
 
   useEffect(() => {
+    let mounted = true;
     axios.get("/api/portfolios").then((response) => {
-      setPortfoios(response.data);
+      if (mounted) {
+        setPortfoios(response.data);
+      }
     });
-  }, [portfolios]);
+    return () => (mounted = false);
+  }, []);
 
   const indexOfLastPortfolios = currentPage * portfoliosPerPage;
   const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage;
@@ -30,10 +35,17 @@ function Portfolios() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Portfolios - Chester React Personal Portfolio Template</title>
+        <meta
+          name="description"
+          content="Chester React Personal Portfolio Template Portfolios Page"
+        />
+      </Helmet>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Apps" />
-          <PortfoliosView portfolios={currentPortfolios} />
+          <Sectiontitle title="Portfolios" />
+          {<PortfoliosView portfolios={currentPortfolios} />}
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination
               className="mt-50"

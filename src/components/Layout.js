@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
 import BackgroundLines from "../components/BackgroundLines";
+import Header from "../components/Header";
 
- function Layout(props){
+function Layout(props) {
   return (
     <div className="mi-wrapper">
       <BackgroundLines />

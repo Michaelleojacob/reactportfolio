@@ -1,139 +1,203 @@
 /**
  * Utilities
+ *
+ * @format
  */
 
 .mi-wrapper {
-   padding-left: 300px;
-   position: relative;
-   min-height: 100vh;
-   z-index: 1;
+  padding-left: 300px;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
 
-   @media #{$layout-laptop} {
-      padding-left: 260px;
-   }
+  @media #{$layout-laptop} {
+    padding-left: 260px;
+  }
 
-   @media #{$layout-notebook} {
-      padding-left: 0;
-   }
+  @media #{$layout-notebook} {
+    padding-left: 0;
+  }
 
-   @media #{$layout-tablet} {
-      padding-left: 0;
-   }
+  @media #{$layout-tablet} {
+    padding-left: 0;
+  }
 
-   @media #{$layout-mobile-lg} {
-      padding-left: 0;
-   }
+  @media #{$layout-mobile-lg} {
+    padding-left: 0;
+  }
 }
 
 .color-theme {
-   color: $color-theme;
+  color: $color-theme;
 }
 
 .mt-30-reverse {
-   margin-top: -30px;
+  margin-top: -30px;
 }
 
 .mt-30 {
-   margin-top: 30px;
+  margin-top: 30px;
 }
 
 .mt-50-reverse {
-   margin-top: -50px;
+  margin-top: -50px;
 }
 
 .mt-50 {
-   margin-top: 50px;
+  margin-top: 50px;
 }
 
 .mi-padding-top {
-   padding-top: 120px;
+  padding-top: 120px;
 
-   @media #{$layout-tablet} {
-      padding-top: 100px;
-   }
+  @media #{$layout-tablet} {
+    padding-top: 100px;
+  }
 
-   @media #{$layout-mobile-lg} {
-      padding-top: 80px;
-   }
+  @media #{$layout-mobile-lg} {
+    padding-top: 80px;
+  }
 }
 
 .mi-padding-bottom {
-   padding-bottom: 120px;
+  padding-bottom: 120px;
 
-   @media #{$layout-tablet} {
-      padding-bottom: 100px;
-   }
+  @media #{$layout-tablet} {
+    padding-bottom: 100px;
+  }
 
-   @media #{$layout-mobile-lg} {
-      padding-bottom: 80px;
-   }
+  @media #{$layout-mobile-lg} {
+    padding-bottom: 80px;
+  }
 }
 
 .mi-section {
-   position: relative;
+  position: relative;
 }
 
 .mi-bglines {
-   position: absolute;
-   left: 300px;
-   top: 0;
-   height: 100%;
-   min-height: 100vh;
-   width: calc(100% - 300px);
-   z-index: -1;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: calc(100% - 300px);
+  z-index: -1;
 
-   span {
-      width: 1px;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 1px;
-      min-height: 100vh;
-      background: rgba($color-border, 0.3);
+  span {
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    min-height: 100vh;
+    background: rgba($color-border, 0.3);
 
-      &:nth-child(1) {
-         left: 20%
-      }
+    &:nth-child(1) {
+      left: 20%;
+    }
 
-      &:nth-child(2) {
-         left: 40%
-      }
+    &:nth-child(2) {
+      left: 40%;
+    }
 
-      &:nth-child(3) {
-         left: 60%
-      }
+    &:nth-child(3) {
+      left: 60%;
+    }
 
-      &:nth-child(4) {
-         left: 80%
-      }
-   }
+    &:nth-child(4) {
+      left: 80%;
+    }
+  }
 
-   @media #{$layout-laptop} {
-      left: 260px;
-      width: calc(100% - 260px);
-   }
+  @media #{$layout-laptop} {
+    left: 260px;
+    width: calc(100% - 260px);
+  }
 
-   @media #{$layout-notebook} {
-      left: 0;
-      width: 100%;
-   }
+  @media #{$layout-notebook} {
+    left: 0;
+    width: 100%;
+  }
 
-   @media #{$layout-tablet} {
-      left: 0;
-      width: 100%;
-   }
+  @media #{$layout-tablet} {
+    left: 0;
+    width: 100%;
+  }
 
-   @media #{$layout-mobile-lg} {
-      left: 0;
-      width: 100%;
-   }
+  @media #{$layout-mobile-lg} {
+    left: 0;
+    width: 100%;
+  }
 }
 
 .size-md[class^="lni-"],
 .size-lg[class^="lni-"],
 .size-sm[class^="lni-"],
 .size-xs[class^="lni-"] {
-   font-size: inherit !important;
+  font-size: inherit !important;
+}
+
+#root {
+  position: relative;
+}
+
+.light-mode {
+  background: rgba(#ffffff, 0.5);
+  position: fixed;
+  z-index: 999;
+  height: 40px;
+  left: auto;
+  right: 0;
+  top: 60px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 5px;
+
+    svg {
+      fill: #fff;
+
+      & > * {
+        fill: #fff;
+      }
+    }
+  }
+
+  &-switch {
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    background: $color-border;
+    border-radius: 100px;
+    position: relative;
+    vertical-align: middle;
+    border: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      height: 16px;
+      width: 16px;
+      border-radius: 100px;
+      background: #ffffff;
+      transition: $transition;
+    }
+
+    &.active {
+      &::after {
+        left: 22px;
+        background: $color-theme;
+      }
+    }
+  }
 }

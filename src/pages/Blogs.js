@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Sectiontitle from "../components/Sectiontitle";
-import Layout from "../components/Layout";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import BlogsView from "../components/BlogsView";
+import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
+import Sectiontitle from "../components/Sectiontitle";
 
 function Blogs() {
   const [posts, setPosts] = useState([]);
@@ -11,10 +12,14 @@ function Blogs() {
   const [postsPerPage] = useState(6);
 
   useEffect(() => {
-    axios.get("/api/blog").then(response => {
-      setPosts(response.data);
+    let mounted = true;
+    axios.get("/api/blog").then((response) => {
+      if (mounted) {
+        setPosts(response.data);
+      }
     });
-  }, [posts]);
+    return () => (mounted = false);
+  }, []);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -23,10 +28,17 @@ function Blogs() {
   const paginate = (e, pageNumber) => {
     e.preventDefault();
     setCurrentPage(pageNumber);
-  }
+  };
 
   return (
     <Layout>
+      <Helmet>
+        <title>Blogs - Chester React Personal Portfolio Template</title>
+        <meta
+          name="description"
+          content="Chester React Personal Portfolio Template Blogs Page"
+        />
+      </Helmet>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Recent Blogs" />

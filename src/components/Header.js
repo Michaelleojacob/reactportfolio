@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 import LineIcon from "react-lineicons";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [information, setInformation] = useState("");
@@ -28,39 +28,39 @@ function Header() {
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">
-          <Link to="/reactportfolio/">
+          <Link to="/">
             <img src={information.brandImage} alt="brandimage" />
           </Link>
         </div>
 
         <ul className="mi-header-menu">
           <li>
-            <NavLink exact to="/reactportfolio/">
+            <NavLink to="/" end>
               <span>Home</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/reactportfolio/about">
+            <NavLink to="/about">
               <span>About</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/reactportfolio/resume">
+            <NavLink to="/resume">
               <span>Resume</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/reactportfolio/portfolios">
-              <span>Apps</span>
+            <NavLink to="/portfolios">
+              <span>Portfolios</span>
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/reactportfolio/blogs">
+          <li>
+            <NavLink to="/blogs">
               <span>Blogs</span>
             </NavLink>
-          </li> */}
+          </li>
           <li>
-            <NavLink to="/reactportfolio/contact">
+            <NavLink to="/contact">
               <span>Contact</span>
             </NavLink>
           </li>
@@ -71,17 +71,9 @@ function Header() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/Michaelleojacob/reactportfolio"
+              href="https://nuclearthemes.com"
             >
-              michaelleojacob
-            </a>
-            <br></br>
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://github.com/Michaelleojacob/reactportfolio"
-            >
-              Portfolio Github Repository
+              NuclearThemes
             </a>
           </b>
         </p>

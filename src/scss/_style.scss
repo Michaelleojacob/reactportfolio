@@ -1,24 +1,30 @@
-@import 'variables';
-@import 'mixins';
+/** @format */
 
-@import 'basic/reset';
-@import 'basic/typography';
-@import 'basic/utilities';
+@import "variables";
+@import "mixins";
 
-@import 'components/button';
-@import 'components/pagination';
-@import 'components/header';
-@import 'components/socialicons';
-@import 'components/title';
-@import 'components/progress';
-@import 'components/service';
-@import 'components/portfolio';
-@import 'components/resume';
-@import 'components/testimonial';
-@import 'components/form';
-@import 'components/blog';
-@import 'components/blogdetails';
+@import "basic/reset";
+@import "basic/typography";
+@import "basic/utilities";
 
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
+@import "components/button";
+@import "components/pagination";
+@import "components/header";
+@import "components/socialicons";
+@import "components/title";
+@import "components/progress";
+@import "components/service";
+@import "components/portfolio";
+@import "components/resume";
+@import "components/testimonial";
+@import "components/form";
+@import "components/blog";
+@import "components/blogdetails";
+@import "components/notfound";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+
+// Color variations
+@import "basic/light";

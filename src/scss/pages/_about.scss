@@ -47,14 +47,14 @@
       transform: scale(0);
       transition: all 0.4s ease-out 0s;
       pointer-events: none;
-  
+
       svg {
         height: 100%;
         width: 100%;
       }
     }
 
-    &:hover &-icon{
+    &:hover &-icon {
       visibility: visible;
       opacity: 0.5;
       transform: scale(1);
@@ -68,6 +68,8 @@
     }
 
     ul {
+      padding-left: 0;
+
       li {
         list-style: none;
         display: flex;
@@ -93,32 +95,32 @@
       }
     }
 
-    .mi-button{
+    .mi-button {
       margin-top: 15px;
     }
   }
 
-  @media #{$layout-tablet}{
-    &-content{
+  @media #{$layout-tablet} {
+    &-content {
       margin-top: 30px;
     }
   }
 
-  @media #{$layout-mobile-lg}{
-    &-image{
-      &-icon{
+  @media #{$layout-mobile-lg} {
+    &-image {
+      &-icon {
         height: 70px;
         width: 70px;
         margin-left: -35px;
         margin-top: -35px;
       }
     }
-    &-content{
+    &-content {
       margin-top: 30px;
 
-      ul{
-        li{
-          b{
+      ul {
+        li {
+          b {
             min-width: 90px;
           }
         }

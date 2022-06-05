@@ -1,0 +1,568 @@
+/** @format */
+
+.light {
+  *::-webkit-scrollbar-track {
+    background-color: #383838;
+  }
+
+  *::-webkit-scrollbar {
+    background-color: #383838;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+  }
+
+  & {
+    color: $light-color-body;
+    background: $light-color-bg-body;
+  }
+
+  @include placeholder-color($light-color-body);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light-color-heading;
+  }
+
+  ::-moz-selection {
+    background: $light-color-theme;
+    color: #ffffff;
+  }
+
+  ::-ms-selection {
+    background: $light-color-theme;
+    color: #ffffff;
+  }
+
+  ::-o-selection {
+    background: $light-color-theme;
+    color: #ffffff;
+  }
+
+  ::selection {
+    background: $light-color-theme;
+    color: #ffffff;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    border-color: $light-color-border;
+    color: $light-color-body;
+    @include placeholder-color($light-color-body);
+
+    &:focus,
+    &:active {
+      border-color: $light-color-theme;
+    }
+  }
+
+  blockquote {
+    border-color: $light-color-theme;
+    background: darken($light-color-bg-body, 5);
+
+    footer {
+      a {
+        color: $light-color-theme;
+
+        &:hover {
+          color: $light-color-theme;
+        }
+      }
+    }
+  }
+
+  .stylish-list {
+    i {
+      color: $light-color-theme;
+    }
+  }
+
+  /* Checkbox & Radio Styles */
+  input[type="checkbox"],
+  input[type="radio"] {
+    & ~ label {
+      &:before {
+        border-color: $light-color-border;
+      }
+    }
+
+    &:checked {
+      & ~ label {
+        color: $light-color-theme;
+
+        &:before {
+          color: $light-color-theme;
+          border-color: $light-color-theme;
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    & ~ label {
+      &::before {
+        border: 2px solid $light-color-border;
+      }
+    }
+
+    &:checked {
+      & ~ label {
+        &::before {
+          color: $light-color-theme;
+          border-color: $light-color-theme;
+        }
+      }
+    }
+  }
+
+  /**
+ * Utilities
+ *
+ * @format
+ */
+
+  .color-theme {
+    color: $light-color-theme;
+  }
+
+  .mi-bglines {
+    span {
+      background: rgba($light-color-border, 0.5);
+    }
+  }
+
+  .light-mode {
+    background: rgba(#000000, 0.5);
+
+    .icon {
+      svg {
+        fill: #fff;
+
+        & > * {
+          fill: #fff;
+        }
+      }
+    }
+
+    &-switch {
+      background: $light-color-border;
+
+      &::after {
+        background: #ffffff;
+      }
+
+      &.active {
+        &::after {
+          background: $light-color-theme;
+        }
+      }
+    }
+  }
+
+  /**
+ * Button
+ */
+
+  .mi-button {
+    background: $light-color-theme;
+    color: #ffffff;
+
+    &::before {
+      background: #ffffff;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .mi-readmore {
+    color: $light-color-theme;
+
+    &::after {
+      background: $light-color-theme;
+    }
+
+    &:hover {
+      color: $light-color-theme;
+    }
+  }
+
+  /*
+ * Pagination
+ */
+
+  .mi-pagination {
+    li {
+      a {
+        border-color: $light-color-theme;
+        color: $light-color-theme;
+      }
+
+      &.is-active {
+        a {
+          background: $light-color-theme;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  /**
+ * Header Styles
+ */
+
+  .mi-header {
+    background: darken($light-color-bg-body, 5);
+    border-color: $light-color-border;
+
+    &-toggler {
+      background: darken($light-color-bg-body, 5);
+
+      &:focus {
+        border-color: $light-color-border;
+      }
+    }
+
+    &-image {
+      border-color: $light-color-border;
+
+      a {
+        border-color: $light-color-border;
+      }
+    }
+
+    &-menu {
+      li {
+        a {
+          color: $light-color-body;
+
+          &::before {
+            background: rgba($light-color-theme, 0.2);
+          }
+
+          &:hover {
+            color: $light-color-theme;
+          }
+
+          &.active {
+            color: #ffffff;
+
+            &::before {
+              background: $light-color-theme;
+            }
+          }
+        }
+      }
+    }
+
+    &-copyright {
+      border-color: $light-color-border;
+
+      a {
+        color: $light-color-body;
+
+        &:hover {
+          color: $light-color-theme;
+        }
+      }
+    }
+  }
+
+  /*
+ * Social Icons
+ */
+
+  .mi-socialicons {
+    li {
+      a {
+        color: $light-color-body;
+
+        &:hover {
+          color: $light-color-theme;
+        }
+      }
+    }
+
+    &-bordered {
+      li {
+        a {
+          border-color: $light-color-border;
+
+          &:hover {
+            border-color: $light-color-theme;
+          }
+        }
+      }
+    }
+  }
+
+  /*
+ * Title 
+ */
+
+  .mi-sectiontitle {
+    span {
+      color: rgba(215, 220, 230, 0.44);
+    }
+
+    h2 {
+      &::before {
+        background: rgba($light-color-theme, 0.3);
+      }
+
+      &::after {
+        background: $light-color-theme;
+      }
+    }
+  }
+
+  .mi-smalltitle {
+    &-icon {
+      color: $light-color-body;
+    }
+  }
+
+  /*
+ * Progress Bar
+ */
+
+  .mi-progress {
+    &-container {
+      background: $light-color-border;
+    }
+
+    &-active {
+      background: $light-color-theme;
+    }
+  }
+
+  /**
+ * Service
+ */
+
+  .mi-service {
+    border-color: $light-color-border;
+    background: darken($light-color-bg-body, 5);
+
+    &-icon {
+      color: $light-color-theme;
+    }
+
+    h5 {
+      &::before {
+        background: $light-color-border;
+      }
+    }
+
+    &:hover {
+      border-top-color: $light-color-theme;
+    }
+  }
+
+  /*
+ * Portfolio
+ */
+
+  .mi-portfolio {
+    &-image {
+      &::before {
+        background: rgba(#ffffff, 0.9);
+      }
+
+      ul {
+        li {
+          a,
+          button {
+            background: $light-color-body;
+            color: #ffffff;
+            border: 1px solid $light-color-body;
+
+            &:hover {
+              background: $light-color-theme;
+              border-color: $light-color-theme;
+            }
+          }
+        }
+      }
+    }
+
+    h5 {
+      color: $light-color-heading;
+
+      a {
+        color: $light-color-heading;
+
+        &:hover {
+          color: $light-color-theme;
+        }
+      }
+    }
+
+    h6 {
+      color: $light-color-body;
+    }
+  }
+
+  /*
+ * Resume 
+ */
+
+  .mi-resume {
+    &-wrapper {
+      border-color: $light-color-border;
+    }
+
+    &-summary {
+      &::before {
+        background: $light-color-bg-body;
+        border-color: $light-color-border;
+      }
+    }
+
+    &-year {
+      color: $light-color-body;
+    }
+
+    &-company {
+      color: $light-color-heading;
+    }
+
+    &-details {
+      &::before {
+        background: $light-color-border;
+      }
+
+      h5 {
+        color: $light-color-theme;
+      }
+    }
+  }
+
+  /**
+ * Service
+ */
+
+  .mi-testimonial {
+    &-content {
+      border-color: $light-color-border;
+      background: darken($light-color-bg-body, 5);
+
+      &::after {
+        border-color: darken($light-color-bg-body, 5) transparent transparent
+          darken($light-color-bg-body, 5);
+      }
+    }
+
+    &-author {
+      h6 {
+        color: $light-color-body;
+      }
+    }
+  }
+
+  /**
+ * Form Styles
+ */
+
+  .mi-form {
+    &-field {
+      label {
+        background: $light-color-bg-body;
+      }
+
+      input,
+      textarea {
+        border-color: $light-color-border;
+      }
+    }
+  }
+
+  /**
+ * Blog Styels
+ */
+
+  .mi-blog {
+    background: darken($light-color-bg-body, 5);
+
+    &-date {
+      background: rgba($light-color-theme, 0.8);
+      color: #ffffff;
+    }
+
+    &-content {
+      h5 {
+        a {
+          color: $light-color-heading;
+
+          &:hover {
+            color: $light-color-theme;
+          }
+        }
+      }
+    }
+  }
+
+  .notfound {
+    &-inner {
+      background: darken($light-color-bg-body, 5);
+    }
+
+    h1 {
+      color: #fd7171;
+    }
+  }
+
+  /*
+ * About Styles
+ */
+
+  .mi-about {
+    &-image {
+      &::before {
+        background: rgba($light-color-theme, 0.6);
+      }
+
+      &::after {
+        background: rgba($light-color-theme, 0.6);
+      }
+
+      &-icon {
+        color: #ffffff;
+      }
+    }
+  }
+
+  /**
+ * Contact
+ */
+
+  .mi-contact {
+    &-infoblock {
+      background: rgba(darken($light-color-bg-body, 5), 1);
+
+      &-icon {
+        border-color: $light-color-border;
+      }
+
+      &-content {
+        p {
+          a {
+            color: $light-color-body;
+
+            &:hover {
+              color: $light-color-theme;
+            }
+          }
+        }
+      }
+    }
+  }
+}
