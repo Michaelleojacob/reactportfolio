@@ -34,8 +34,9 @@ function Home({ lightMode }) {
                   <span className='color-theme'>{information.name}</span>
                 </h1>
                 <p>{information.aboutContent1}</p>
-                <p>{information.aboutContent2}</p>
                 <p>{information.aboutContent3}</p>
+                <p>{information.aboutContent2}</p>
+                <p>{information.aboutContent4}</p>
                 <Socialicons bordered />
               </div>
             </div>

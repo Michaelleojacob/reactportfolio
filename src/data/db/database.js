@@ -4,15 +4,17 @@ const database = {
   information: {
     name: 'Michael Jacob',
     aboutContent1: 'Full Stack Engineer | Front-end Dev | Backnd Dev',
-    aboutContent2: 'I create and solve problems in the virtual space',
-    aboutContent3: 'Mostly just click buttons.',
+    aboutContent2: 'create and solve problems in the virtual space',
+    aboutContent3:
+      'solve difficult problems with elegant but effective solutions',
+    aboutContent4: 'mostly I just click buttons',
     age: 29,
     phone: '619-871-1891',
     nationality: 'American',
     language: 'English',
     email: 'michaelleojacob@gmail.com',
     address: 'San Diego, CA',
-    // freelanceStatus: 'Available',
+    freelanceStatus: '',
     socialLinks: {
       facebook: '',
       twitter: '',
