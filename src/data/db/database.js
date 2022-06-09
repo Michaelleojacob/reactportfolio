@@ -3,7 +3,7 @@ import Mock from '../mock';
 const database = {
   information: {
     name: 'Michael Jacob',
-    aboutContent1: 'Full Stack Engineer | Front-end Dev | Backnd Dev',
+    aboutContent1: 'Full Stack Engineer | Frontend Dev | Backend Dev',
     aboutContent2: 'create and solve problems in the virtual space',
     aboutContent3:
       'solve difficult problems with elegant but effective solutions',
