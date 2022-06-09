@@ -4,10 +4,9 @@ const database = {
   information: {
     name: 'Michael Jacob',
     aboutContent1: 'Full Stack Engineer | Frontend Dev | Backend Dev',
-    aboutContent2: 'create and solve problems in the virtual space',
-    aboutContent3:
-      'solve difficult problems with elegant but effective solutions',
-    aboutContent4: 'mostly I just click buttons',
+    aboutContent2:
+      'I solve difficult problems with elegant but effective solutions',
+    aboutContent3: 'I mainly just click buttons',
     age: 29,
     phone: '619-871-1891',
     nationality: 'American',

@@ -92,10 +92,11 @@ function About() {
                   I am <span className='color-theme'>{information.name}</span>
                 </h3>
                 <p>
-                  Software Engineer and Full Stack engineer. Interested in
-                  Front-end and Back-end work. I enjoy solving difficult
-                  problems with elegant but effective solutions.
+                  Actively seeking Software and Web Development roles that allow
+                  me to practice, improve and expand my knowledge of code and my
+                  ability to use code effectively.
                 </p>
+                <p></p>
                 <ul>
                   {!information.name ? null : (
                     <li>
