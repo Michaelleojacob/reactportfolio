@@ -18,10 +18,7 @@ function Home({ lightMode }) {
     <Layout>
       <Helmet>
         <title>Michael Jacob - Home Page</title>
-        <meta
-          name='description'
-          content='Chester React Personal Portfolio Template Homepage'
-        />
+        <meta name='description' content='Michael Jacob - Home Page' />
       </Helmet>
       <div className='mi-home-area mi-padding-section'>
         <Particle lightMode={lightMode} />
@@ -35,6 +32,7 @@ function Home({ lightMode }) {
                 </h1>
                 <p>{information.aboutContent1}</p>
                 <p>{information.aboutContent2}</p>
+                <p>{information.aboutContent3}</p>
                 <Socialicons bordered />
               </div>
             </div>

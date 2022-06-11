@@ -6,6 +6,8 @@ const database = {
     aboutContent1: 'Full Stack Engineer | Frontend Dev | Backend Dev',
     aboutContent2:
       'I solve difficult problems with elegant but effective solutions',
+    aboutContent3:
+      'Known for being a team player, independent worker, goofball, pressing buttons on a keyboard, and solving problems.',
     age: 29,
     phone: '619-871-1891',
     nationality: 'American',

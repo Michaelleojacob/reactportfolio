@@ -27,12 +27,9 @@ function Resumes() {
     <Layout>
       <Helmet>
         <title>Michael Jacob Resume Page</title>
-        <meta
-          name='description'
-          content='Chester React Personal Portfolio Template Resume Page'
-        />
+        <meta name='description' content='Michael Jacob Resume Page' />
       </Helmet>
-      <div className='mi-skills-area mi-section mi-padding-top'>
+      {/* <div className='mi-skills-area mi-section mi-padding-top'>
         <div className='container'>
           <Sectiontitle title='My Skills' />
           <div className='mi-skills'>
@@ -48,7 +45,7 @@ function Resumes() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='mi-resume-area mi-section mi-padding-top mi-padding-bottom'>
         <div className='container'>
           <Sectiontitle title='Resume' />
