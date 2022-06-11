@@ -17,7 +17,7 @@ function Home({ lightMode }) {
   return (
     <Layout>
       <Helmet>
-        <title>Home - Chester React Personal Portfolio Template</title>
+        <title>Michael Jacob - Home Page</title>
         <meta
           name='description'
           content='Chester React Personal Portfolio Template Homepage'

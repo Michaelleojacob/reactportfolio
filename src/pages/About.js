@@ -57,7 +57,7 @@ function About() {
   return (
     <Layout>
       <Helmet>
-        <title>About</title>
+        <title>Michael Jacob - About</title>
         <meta name='About' content='About' />
       </Helmet>
       <div className='mi-about-area mi-section mi-padding-top'>
