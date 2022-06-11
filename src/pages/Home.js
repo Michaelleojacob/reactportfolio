@@ -35,7 +35,6 @@ function Home({ lightMode }) {
                 </h1>
                 <p>{information.aboutContent1}</p>
                 <p>{information.aboutContent2}</p>
-                <p>{information.aboutContent3}</p>
                 <Socialicons bordered />
               </div>
             </div>

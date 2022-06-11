@@ -6,7 +6,6 @@ const database = {
     aboutContent1: 'Full Stack Engineer | Frontend Dev | Backend Dev',
     aboutContent2:
       'I solve difficult problems with elegant but effective solutions',
-    aboutContent3: 'I mainly just click buttons',
     age: 29,
     phone: '619-871-1891',
     nationality: 'American',
@@ -32,13 +31,13 @@ const database = {
     {
       title: 'React Developer',
       icon: 'react',
-      details: '',
+      details:
+        'Extensive knowledge and practice with using React as a framework. One of my favorite pieces of technology to work with',
     },
     {
       title: 'Web Development',
       icon: 'code',
-      details:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.',
+      details: 'Clean, smart, creative, efficient and effective code. ',
     },
     {
       title: 'Mobile Application',
