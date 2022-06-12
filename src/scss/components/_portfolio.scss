@@ -118,3 +118,33 @@
     opacity: 1;
   }
 }
+
+.port-icons{
+  display: flex;
+  flex-direction: row;
+  gap:0.5rem;
+  font-size: 1.75rem;
+  margin: 0.5rem 0rem
+}
+
+
+
+.port-icons > .my-html{
+  color: red;
+}
+.port-icons > .my-router{
+  color: rgb(189, 0, 0);
+}
+
+.port-icons > .my-javascript{
+  color: yellow;
+}
+.port-icons > .my-react{
+  color: #61dafb;
+}
+.port-icons > .my-css{
+  color: #61dafb;
+}
+.port-icons > .my-firebase{
+  color: #FFA000;
+}

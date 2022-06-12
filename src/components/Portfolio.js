@@ -3,6 +3,30 @@ import React, { useState } from 'react';
 import * as Icon from 'react-feather';
 import ProgressiveImage from 'react-progressive-image';
 import LineIcon from 'react-lineicons';
+import {
+  SiReact,
+  SiFirebase,
+  SiReactrouter,
+  SiWebpack,
+  SiRedux,
+  SiJavascript,
+} from 'react-icons/si';
+
+import { DiCss3, DiRuby } from 'react-icons/di';
+
+import { AiOutlineHtml5 } from 'react-icons/ai';
+
+const myIcons = {
+  css: DiCss3,
+  javascript: SiJavascript,
+  react: SiReact,
+  html: AiOutlineHtml5,
+  firebase: SiFirebase,
+  router: SiReactrouter,
+  webpack: SiWebpack,
+  redux: SiRedux,
+  ruby: DiRuby,
+};
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
@@ -48,7 +72,14 @@ function Portfolio(props) {
         </h5>
       )}
       {subtitle ? <h6>{subtitle}</h6> : null}
-      {icons ? icons.map((thing) => <LineIcon name={thing} />) : null}
+      <div className='port-icons'>
+        {icons
+          ? icons.map((eachIcon, index) => {
+              const Thing = myIcons[eachIcon];
+              return <Thing key={index} className={`my-${eachIcon}`} />;
+            })
+          : null}
+      </div>
       {!largeImageUrl ? null : (
         <FsLightbox toggler={toggler} sources={largeImageUrl} />
       )}

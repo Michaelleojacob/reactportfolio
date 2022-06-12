@@ -123,7 +123,7 @@ const database = {
       imageUrl: '/images/portfolio-image-1.jpg',
       largeImageUrl: ['/images/portfolio-image-1-lg.jpg'],
       url: 'https://dribbble.com',
-      icons: ['react', 'code', 'javascript', 'html5'],
+      icons: ['react', 'javascript', 'html', 'css', 'firebase', 'router'],
     },
     {
       id: 2,
@@ -135,7 +135,7 @@ const database = {
         '/images/portfolio-image-4-lg2.jpg',
       ],
       url: 'https://facebook.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 3,
@@ -143,7 +143,7 @@ const database = {
       subtitle: 'Beautiful mug with logo.',
       imageUrl: '/images/portfolio-image-2.jpg',
       url: 'https://pinterest.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 4,
@@ -152,7 +152,7 @@ const database = {
       imageUrl: '/images/portfolio-image-3.jpg',
       largeImageUrl: ['/images/portfolio-image-3-lg.jpg'],
       url: '#',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 5,
@@ -160,7 +160,7 @@ const database = {
       subtitle: 'Mug with awesome style',
       imageUrl: '/images/portfolio-image-5.jpg',
       largeImageUrl: ['/images/portfolio-image-5-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 6,
@@ -168,7 +168,7 @@ const database = {
       subtitle: 'Free pendrive mockup design.',
       imageUrl: '/images/portfolio-image-6.jpg',
       largeImageUrl: ['/images/portfolio-image-6-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 7,
@@ -177,7 +177,7 @@ const database = {
       imageUrl: '/images/portfolio-image-7.jpg',
       largeImageUrl: ['/images/portfolio-image-7-lg.jpg'],
       url: 'https://twitter.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 8,
@@ -185,7 +185,7 @@ const database = {
       subtitle: 'Clip sticker mockup design.',
       imageUrl: '/images/portfolio-image-8.jpg',
       largeImageUrl: ['/images/portfolio-image-8-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 9,
@@ -193,7 +193,7 @@ const database = {
       subtitle: 'Beautiful packet & product design.',
       imageUrl: '/images/portfolio-image-9.jpg',
       largeImageUrl: ['/images/portfolio-image-9-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 10,
@@ -202,7 +202,7 @@ const database = {
       imageUrl: '/images/portfolio-image-3.jpg',
       largeImageUrl: ['/images/portfolio-image-3-lg.jpg'],
       url: '#',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 11,
@@ -214,7 +214,7 @@ const database = {
         '/images/portfolio-image-4-lg2.jpg',
       ],
       url: 'https://facebook.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 12,
@@ -222,7 +222,7 @@ const database = {
       subtitle: 'Beautiful mug with logo.',
       imageUrl: '/images/portfolio-image-2.jpg',
       url: 'https://pinterest.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 13,
@@ -231,7 +231,7 @@ const database = {
       imageUrl: '/images/portfolio-image-1.jpg',
       largeImageUrl: ['/images/portfolio-image-1-lg.jpg'],
       url: 'https://dribbble.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 14,
@@ -239,7 +239,7 @@ const database = {
       subtitle: 'Mug with awesome style',
       imageUrl: '/images/portfolio-image-5.jpg',
       largeImageUrl: ['/images/portfolio-image-5-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 15,
@@ -247,7 +247,7 @@ const database = {
       subtitle: 'Free pendrive mockup design.',
       imageUrl: '/images/portfolio-image-6.jpg',
       largeImageUrl: ['/images/portfolio-image-6-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 16,
@@ -256,7 +256,7 @@ const database = {
       imageUrl: '/images/portfolio-image-7.jpg',
       largeImageUrl: ['/images/portfolio-image-7-lg.jpg'],
       url: 'https://twitter.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 17,
@@ -264,7 +264,7 @@ const database = {
       subtitle: 'Clip sticker mockup design.',
       imageUrl: '/images/portfolio-image-8.jpg',
       largeImageUrl: ['/images/portfolio-image-8-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 18,
@@ -272,7 +272,7 @@ const database = {
       subtitle: 'Beautiful packet & product design.',
       imageUrl: '/images/portfolio-image-9.jpg',
       largeImageUrl: ['/images/portfolio-image-9-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 19,
@@ -281,7 +281,7 @@ const database = {
       imageUrl: '/images/portfolio-image-1.jpg',
       largeImageUrl: ['/images/portfolio-image-1-lg.jpg'],
       url: 'https://dribbble.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 20,
@@ -293,7 +293,7 @@ const database = {
         '/images/portfolio-image-4-lg2.jpg',
       ],
       url: 'https://facebook.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 21,
@@ -301,7 +301,7 @@ const database = {
       subtitle: 'Beautiful mug with logo.',
       imageUrl: '/images/portfolio-image-2.jpg',
       url: 'https://pinterest.com',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 22,
@@ -310,7 +310,7 @@ const database = {
       imageUrl: '/images/portfolio-image-3.jpg',
       largeImageUrl: ['/images/portfolio-image-3-lg.jpg'],
       url: '#',
-      icons: [''],
+      // icons: [''],
     },
     {
       id: 23,
@@ -318,7 +318,7 @@ const database = {
       subtitle: 'Mug with awesome style',
       imageUrl: '/images/portfolio-image-5.jpg',
       largeImageUrl: ['/images/portfolio-image-5-lg.jpg'],
-      icons: [''],
+      // icons: [''],
     },
   ],
   experience: {
