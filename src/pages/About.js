@@ -69,9 +69,9 @@ function About() {
                 <ProgressiveImage
                   src={information.aboutImage}
                   placeholder='/images/about-image-placeholder.png'>
-                  {(src) => (
+                  {() => (
                     <img
-                      src={process.env.PUBLIC_URL + '/images/about-image.jpg'}
+                      src={process.env.PUBLIC_URL + src}
                       alt='aboutimage'
                       onClick={() => handleToggler(!toggler)}
                     />
