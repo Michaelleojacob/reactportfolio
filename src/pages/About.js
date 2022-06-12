@@ -82,7 +82,7 @@ function About() {
                 </span>
                 <FsLightbox
                   toggler={toggler}
-                  sources={[information.aboutImageLg]}
+                  sources={[process.env.PUBLIC_URL + information.aboutImageLg]}
                 />
               </div>
             </div>

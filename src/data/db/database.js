@@ -123,8 +123,8 @@ const database = {
         'An interactive game where you compete with other players to get on the high scores!',
       imageUrl: '/images/portfolio-image-1.jpg',
       largeImageUrl: [
-        '/images/portfolio-image-1-lg.jpg',
-        '/images/portfolio-image-1-lg-1.2.jpg',
+        process.env.PUBLIC_URL + '/images/portfolio-image-1-lg.jpg',
+        process.env.PUBLIC_URL + '/images/portfolio-image-1-lg-1.2.jpg',
       ],
       url: 'https://github.com/Michaelleojacob/waldo-with-backend',
       live: 'https://michaelleojacob-photo-tagging-app.web.app/',
