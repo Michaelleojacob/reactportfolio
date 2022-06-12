@@ -123,7 +123,16 @@ const database = {
       imageUrl: '/images/portfolio-image-1.jpg',
       largeImageUrl: ['/images/portfolio-image-1-lg.jpg'],
       url: 'https://dribbble.com',
-      icons: ['react', 'javascript', 'html', 'css', 'firebase', 'router'],
+      icons: [
+        'react',
+        'javascript',
+        'html',
+        'css',
+        'firebase',
+        'router',
+        'redux',
+        'ruby',
+      ],
     },
     {
       id: 2,

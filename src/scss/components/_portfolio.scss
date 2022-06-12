@@ -127,24 +127,50 @@
   margin: 0.5rem 0rem
 }
 
-
-
-.port-icons > .my-html{
-  color: red;
+.my-icon-holder > *{
+  pointer-events: none;
 }
-.port-icons > .my-router{
+
+.my-icon-holder:hover .my-tooltip {
+  visibility: visible;
+}
+
+
+
+.my-icon-holder > .my-html{
+  color: #e34f26;
+}
+.my-icon-holder > .my-router{
   color: rgb(189, 0, 0);
 }
 
-.port-icons > .my-javascript{
+.my-icon-holder > .my-javascript{
   color: yellow;
 }
-.port-icons > .my-react{
+.my-icon-holder > .my-react{
   color: #61dafb;
 }
-.port-icons > .my-css{
+.my-icon-holder > .my-css{
   color: #61dafb;
 }
-.port-icons > .my-firebase{
+.my-icon-holder > .my-firebase{
   color: #FFA000;
+}
+.my-icon-holder > .my-redux{
+  color: #764abc;
+}
+.my-icon-holder > .my-ruby{
+  color: #820c02;
+}
+
+.my-tooltip{
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  width: fit-content;
+  z-index: 9999;
+  color: black;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
 }

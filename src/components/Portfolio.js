@@ -10,11 +10,16 @@ import {
   SiWebpack,
   SiRedux,
   SiJavascript,
+  SiTailwindcss,
+  SiTypescript,
+  SiJest,
 } from 'react-icons/si';
 
-import { DiCss3, DiRuby } from 'react-icons/di';
-
+import { DiCss3, DiRuby, DiNpm } from 'react-icons/di';
 import { AiOutlineHtml5 } from 'react-icons/ai';
+import { FaNode } from 'react-icons/fa';
+import { TiCloudStorage } from 'react-icons/ti';
+import { GrStorage } from 'react-icons/gr';
 
 const myIcons = {
   css: DiCss3,
@@ -26,6 +31,13 @@ const myIcons = {
   webpack: SiWebpack,
   redux: SiRedux,
   ruby: DiRuby,
+  tailwind: SiTailwindcss,
+  node: FaNode,
+  typescript: SiTypescript,
+  npm: DiNpm,
+  jest: SiJest,
+  localStorage: GrStorage,
+  firestore: TiCloudStorage,
 };
 
 function Portfolio(props) {
@@ -75,8 +87,13 @@ function Portfolio(props) {
       <div className='port-icons'>
         {icons
           ? icons.map((eachIcon, index) => {
-              const Thing = myIcons[eachIcon];
-              return <Thing key={index} className={`my-${eachIcon}`} />;
+              const MyIcon = myIcons[eachIcon];
+              return (
+                <div className='my-icon-holder' key={index}>
+                  <MyIcon className={`my-${eachIcon}`} />
+                  <span className='my-tooltip'>{eachIcon}</span>
+                </div>
+              );
             })
           : null}
       </div>
