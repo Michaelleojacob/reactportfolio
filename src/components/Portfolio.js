@@ -55,7 +55,7 @@ function Portfolio(props) {
         <ProgressiveImage
           src={imageUrl}
           placeholder='/images/portfolio-image-placeholder.png'>
-          {(src) => <img src={process.env.PUBLIC_URL + src} alt={title} />}
+          {(src) => <img src={src} alt={title} />}
         </ProgressiveImage>
         <ul>
           {!largeImageUrl ? null : (

@@ -21,7 +21,7 @@ function Blog(props) {
           <ProgressiveImage
             src={featuredImage}
             placeholder='/images/blog-image-placeholder.png'>
-            {(src) => <img src={process.env.PUBLIC_URL + src} alt={title} />}
+            {(src) => <img src={src} alt={title} />}
           </ProgressiveImage>
         </Link>
         <div className='mi-blog-date'>

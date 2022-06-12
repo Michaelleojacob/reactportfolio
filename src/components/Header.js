@@ -29,10 +29,7 @@ function Header() {
       <div className='mi-header-inner'>
         <div className='mi-header-image'>
           <Link to='/'>
-            <img
-              src={process.env.PUBLIC_URL + information.brandImage}
-              alt='brandimage'
-            />
+            <img src={information.brandImage} alt='brandimage' />
           </Link>
         </div>
 

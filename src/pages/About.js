@@ -71,7 +71,7 @@ function About() {
                   placeholder='/images/about-image-placeholder.png'>
                   {(src) => (
                     <img
-                      src={process.env.PUBLIC_URL + src}
+                      src={src}
                       alt='aboutimage'
                       onClick={() => handleToggler(!toggler)}
                     />
