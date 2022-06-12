@@ -71,8 +71,8 @@ function Header() {
             <a
               rel='noopener noreferrer'
               target='_blank'
-              href='https://nuclearthemes.com'>
-              NuclearThemes
+              href='https://github.com/Michaelleojacob'>
+              michaelleojacob
             </a>
           </b>
         </p>

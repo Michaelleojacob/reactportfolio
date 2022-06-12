@@ -181,10 +181,13 @@ const database = {
       title: 'Pen Holder',
       subtitle: 'A pen holder with beautiful design.',
       imageUrl: '/images/portfolio-image-4.jpg',
-      largeImageUrl: ['/images/portfolio-image-4-lg.jpg'],
-      url: '#',
-      live: '',
-      // icons: [''],
+      largeImageUrl: [
+        '/images/portfolio-image-4-lg.jpg',
+        '/images/portfolio-image-4-lg2.jpg',
+      ],
+      url: 'https://github.com/Michaelleojacob/pokememory',
+      live: 'https://michaelleojacob.github.io/pokememory/',
+      icons: ['react', 'javascript', 'html', 'css', 'webpack', 'npm', 'node'],
     },
     {
       id: 5,
