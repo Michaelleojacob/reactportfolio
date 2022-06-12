@@ -35,32 +35,32 @@ function Header() {
 
         <ul className='mi-header-menu'>
           <li>
-            <NavLink to='/reactportfolio/' end>
+            <NavLink to='/' end>
               <span>Home</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/reactportfolio/about'>
+            <NavLink to='/about'>
               <span>About</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/reactportfolio/resume'>
+            <NavLink to='/resume'>
               <span>Resume</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/reactportfolio/portfolios'>
+            <NavLink to='/portfolios'>
               <span>Apps</span>
             </NavLink>
           </li>
           {/* <li>
-            <NavLink to="/reactportfolio/blogs">
+            <NavLink to="/blogs">
               <span>Blogs</span>
             </NavLink>
           </li> */}
           <li>
-            <NavLink to='/reactportfolio/contact'>
+            <NavLink to='/contact'>
               <span>Contact</span>
             </NavLink>
           </li>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as Icon from 'react-feather';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import About from './pages/About';
 import BlogDetails from './pages/BlogDetails';
@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <div className="light-mode">
         <span className="icon">
           <Icon.Sun />
@@ -42,20 +42,16 @@ function App() {
         ></button>
       </div> */}
       <Routes>
-        <Route
-          path='/reactportfolio/'
-          index
-          element={<Home lightMode={lightMode} />}
-        />
-        <Route path='/reactportfolio/about' element={<About />} />
-        <Route path='/reactportfolio/resume' element={<Resumes />} />
-        <Route path='/reactportfolio/portfolios' element={<Portfolios />} />
+        <Route path='/' index element={<Home lightMode={lightMode} />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/resume' element={<Resumes />} />
+        <Route path='/portfolios' element={<Portfolios />} />
         {/* <Route path='blogs' element={<Blogs />} /> */}
         {/* <Route path='blogs/:id/:title' element={<BlogDetails />} /> */}
-        <Route path='/reactportfolio/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Notfound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
