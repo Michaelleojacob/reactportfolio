@@ -14,7 +14,7 @@ function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
-  const [reviews, setReviews] = useState([]);
+  // const [reviews, setReviews] = useState([]);
 
   const sliderSettings = {
     dots: false,
@@ -49,9 +49,9 @@ function About() {
     axios.get('/api/services').then((response) => {
       setServices(response.data);
     });
-    axios.get('/api/reviews').then((response) => {
-      setReviews(response.data);
-    });
+    // axios.get('/api/reviews').then((response) => {
+    //   setReviews(response.data);
+    // });
   }, []);
 
   return (

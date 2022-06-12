@@ -34,13 +34,13 @@ const database = {
       title: 'Front-end Dev',
       icon: 'react',
       details:
-        'Able to create awesome visuals using Javascript, HTML, and CSS. Extensive knowledge and practice with using React. Proficient at crafting pixel perfect UIs.',
+        'Able to create awesome visuals using Javascript, HTML, and CSS. Extensive knowledge and practice with using React as well as other frameworks and libraries. Proficient at crafting pixel perfect UIs.',
     },
     {
       title: 'Back-end Dev',
       icon: 'code',
       details:
-        'Create-read-update-delete from a database. Use and write custom APIs to accomplish goals. Structure and plan out database architecture',
+        'Create-read-update-delete from a database. Use and write custom APIs to accomplish goals. Structure and plan out database architecture.',
     },
     {
       title: 'Mobile Application',
@@ -52,13 +52,13 @@ const database = {
       title: 'Problem Solving',
       icon: 'bulb',
       details:
-        'Enjoy taking on new challenges. I have yet to meet a problem I cannot solve. Using syntax and programming languages as my tools, I believe anything is possible.',
+        'Enjoy taking on new challenges. I have yet to meet a problem I cannot solve. When wielding syntax and programming languages as my tools, I believe anything is possible.',
     },
     {
       title: 'Team Player',
       icon: 'sun',
       details:
-        'Goofball, friendly and fun to be around. I thrive both when working with others and independently. My goal is always to make people laugh, smile and enjoy the process. Aim to be reliable, consistent and a hard worker.',
+        'Goofball, friendly and fun to be around. I thrive both when working with others and independently. My goal is always to make people laugh, smile and enjoy the process. Established as reliable, consistent, honest and a hard worker.',
     },
   ],
   // reviews: [
@@ -414,7 +414,7 @@ const database = {
         position: 'Lab Tech',
         company: 'Team Braces',
         details:
-          'I work with a small treatment team to assist patients in accomplishing their goals. At Team Braces I actively take part in assisting over 40 patients a week in their treatment journey. I make essex and wired retainers for our patients. I also make models that the surgeons and doctors need in order to plan the best treatment for each individual.',
+          'I work with a small treatment team to assist patients in accomplishing their goals. At Team Braces I play an involved role in assisting over 40 patients a week with their treatment journey. I hand-make essex and wired retainers tailored to individual patients. I also make models that surgeons and doctors need in order to plan the best treatment for each patient.',
       },
       {
         id: 3,
@@ -422,7 +422,7 @@ const database = {
         position: 'Ramp Supervisor',
         company: 'Delta Airlines',
         details:
-          'Led a team of 10 people to carry out the tasks of each day, and work together efficiently so every flight went smoothly and on time.',
+          'Led a team of 10 people to carry out the tasks of each day. Under my supervision my team and I worked efficiently so every flight went smoothly and on time.',
       },
     ],
     educationExperience: [
@@ -432,7 +432,7 @@ const database = {
         graduation: 'Self Taught Programmer',
         university: 'The Odin Project',
         details:
-          'Discovered my passion for software in 2019 when exploring different career paths. I initially attended a programming bootcamp and decided to follow it up with supplimental learning material. After doing some research about the best paths for self study I often saw TOP (The Odin Project) recommended. I started TOP, joined the community in 2019 then proceeded to fall in love with software and the community. The curriculum has 10,000 daily active users on discord. The community itself is wholesome, helpful and welcoming. TOP has become a second home and family to me as we TOP members actively help, push and encourage each other to succeed on our paths as developers.',
+          'Discovered my passion for software in 2019 when exploring different career paths. I initially attended a programming bootcamp and decided to follow it up with supplimental learning material. After doing some research about the best paths for self study I often saw TOP (The Odin Project) recommended. I started TOP in 2019 then proceeded to fall in love with software and the community. The curriculum has 10,000 daily active users on discord. The TOP group is wholesome, helpful and welcoming. TOP has become a second home and family to me as we TOP members actively help, push and encourage each other to succeed on our paths as developers.',
       },
       {
         id: 2,
@@ -440,7 +440,7 @@ const database = {
         graduation: 'Programming bootcamp',
         university: 'UCSD',
         details:
-          'Attended a programming bootcamp with ZERO prior programming experience. This was my intro to software. I learned a lot through creating projects while working on teams, or independently. I really enjoyed the work, created some really cool projects and got to meet some awesome people.',
+          'Attended a programming bootcamp with ZERO prior programming experience. This was my intro to software. I learned a lot through creating projects while working on teams, and independently. I really enjoyed the work, created some really cool projects and got to meet some awesome people.',
       },
       {
         id: 3,
@@ -448,7 +448,7 @@ const database = {
         graduation: 'Life experience (life after Highschool)',
         university: 'Worked and explored different career options',
         details:
-          'After graduating Highschool, I landed a job as a Lab Tech. Got to be involved in patient treatment and progress which I found very fulfilling. The team was kind to me, and allowed for schedule flexibility so I could pursue other career opportunities. I found work at the airport for a number of years and became a supervisor. Went on to attended Border Patrol academy, only to discover that path was not the best fit for me. Eventually I discovered a passion for hardware, computers, and tech. After working as a computer tech briefly, I attempted some software challenges and really enjoyed them. It was at this point I decided to commit and immerse myself in learning software.',
+          'After graduating Highschool, I landed a job as a Lab Tech. The role is heavily involved with patient treatment and progress which is very fulfilling work. The team was kind to me, and allowed me to work a flexible schedule so I could pursue other career opportunities. I found work at the airport for a number of years and became a supervisor. Went on to attended Border Patrol academy, only to discover that path was not the best fit for me. Eventually I discovered a passion for hardware, computers, and tech. After working as a computer tech briefly, I attempted some software challenges and really enjoyed them. It was at this point I decided to commit and immerse myself to learning software.',
       },
     ],
   },
