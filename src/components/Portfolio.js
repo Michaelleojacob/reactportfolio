@@ -42,7 +42,7 @@ const myIcons = {
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const { title, subtitle, imageUrl, largeImageUrl, url, icons } =
+  const { title, subtitle, imageUrl, largeImageUrl, url, icons, live } =
     props.content;
 
   const handleToggler = (value) => {
@@ -68,6 +68,13 @@ function Portfolio(props) {
           {url ? (
             <li>
               <a rel='noopener noreferrer' target='_blank' href={url}>
+                <Icon.GitHub />
+              </a>
+            </li>
+          ) : null}
+          {live ? (
+            <li>
+              <a rel='noopener noreferrer' target='_blank' href={live}>
                 <Icon.Link />
               </a>
             </li>
@@ -84,19 +91,19 @@ function Portfolio(props) {
         </h5>
       )}
       {subtitle ? <h6>{subtitle}</h6> : null}
-      <div className='port-icons'>
-        {icons
-          ? icons.map((eachIcon, index) => {
-              const MyIcon = myIcons[eachIcon];
-              return (
-                <div className='my-icon-holder' key={index}>
-                  <MyIcon className={`my-${eachIcon}`} />
-                  <span className='my-tooltip'>{eachIcon}</span>
-                </div>
-              );
-            })
-          : null}
-      </div>
+      {icons ? (
+        <div className='port-icons'>
+          {icons.map((eachIcon, index) => {
+            const MyIcon = myIcons[eachIcon];
+            return (
+              <div className='my-icon-holder' key={index}>
+                <MyIcon className={`my-${eachIcon}`} />
+                <span className='my-tooltip'>{eachIcon}</span>
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
       {!largeImageUrl ? null : (
         <FsLightbox toggler={toggler} sources={largeImageUrl} />
       )}
