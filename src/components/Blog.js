@@ -19,9 +19,10 @@ function Blog(props) {
       <div className='mi-blog-image'>
         <Link to={`${id}/${getNospaceTitle(filesource)}`}>
           <ProgressiveImage
-            src={featuredImage}
+            src={process.env.PUBLIC_URL + featuredImage}
+            alt={title}
             placeholder='/images/blog-image-placeholder.png'>
-            {(src) => <img src={process.env.PUBLIC_URL + src} alt={title} />}
+            {(src) => <img src={src} alt={title} />}
           </ProgressiveImage>
         </Link>
         <div className='mi-blog-date'>

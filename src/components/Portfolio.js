@@ -53,9 +53,9 @@ function Portfolio(props) {
     <div className='mi-portfolio mi-portfolio-visible'>
       <div className='mi-portfolio-image'>
         <ProgressiveImage
-          src={imageUrl}
+          src={process.env.PUBLIC_URL + imageUrl}
           placeholder='/images/portfolio-image-placeholder.png'>
-          {(src) => <img src={process.env.PUBLIC_URL + src} alt={title} />}
+          {(src) => <img src={src} alt={title} />}
         </ProgressiveImage>
         <ul>
           {!largeImageUrl ? null : (
