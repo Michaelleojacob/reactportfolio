@@ -143,7 +143,7 @@ function About() {
                   href={information.cvfile}
                   target='blank'
                   className='mi-button'>
-                  Download CV
+                  my resume
                 </a>
               </div>
             </div>

@@ -345,17 +345,10 @@ const database = {
       {
         id: 3,
         year: '2011-2019',
-        graduation: 'Life experience',
-        university: 'Worked, explored different career options',
+        graduation: 'Life experience (life after Highschool)',
+        university: 'Worked and explored different career options',
         details:
-          'After Highschool, I landed a job as a Lab Tech. Got to be involved in patient treatment and progress which I found very fulfilling. The team was kind to me and allowed me to work reduced hours to try other aspects of life. I worked at the airport for a number of years and became a supervisor. I attended Border Patrol academy, only to discover that path was not the best fit for me. Eventually I discovered a passion for hardware, computers, and tech. After working as a computer tech briefly, I attempted some software challenges and really enjoyed them. It was at this point I decided to commit and immerse myself in learning software.',
-      },
-      {
-        id: 4,
-        year: '2011',
-        graduation: 'High School',
-        university: 'Bonita Vista Highschool',
-        details: 'Graduated in 2011.',
+          'After graduating Highschool, I landed a job as a Lab Tech. Got to be involved in patient treatment and progress which I found very fulfilling. The team was kind to me, and allowed for schedule flexibility so I could pursue other career opportunities. I found work at the airport for a number of years and became a supervisor. Went on to attended Border Patrol academy, only to discover that path was not the best fit for me. Eventually I discovered a passion for hardware, computers, and tech. After working as a computer tech briefly, I attempted some software challenges and really enjoyed them. It was at this point I decided to commit and immerse myself in learning software.',
       },
     ],
   },
