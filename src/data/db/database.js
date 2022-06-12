@@ -61,60 +61,60 @@ const database = {
         'Goofball, friendly and fun to be around. I thrive both when working with others and independently. I think being a team player and working together to peer code, review and submit changes is extremely powerful.',
     },
   ],
-  reviews: [
-    {
-      id: 1,
-      content:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.',
-      author: {
-        name: 'Burdette Turner',
-        designation: 'Web Developer, Abc Company',
-      },
-    },
-    {
-      id: 2,
-      content:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.',
-      author: {
-        name: 'Susan Yost',
-        designation: 'Client',
-      },
-    },
-    {
-      id: 3,
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      author: {
-        name: 'Irving Feeney',
-        designation: 'Fiverr Client',
-      },
-    },
-  ],
-  skills: [
-    {
-      title: 'HTML5',
-      value: 95,
-    },
-    {
-      title: 'CSS3',
-      value: 90,
-    },
-    {
-      title: 'Javascript',
-      value: 70,
-    },
-    {
-      title: 'jQuery',
-      value: 85,
-    },
-    {
-      title: 'ReactJS',
-      value: 80,
-    },
-    {
-      title: 'Photoshop',
-      value: 65,
-    },
-  ],
+  // reviews: [
+  //   {
+  //     id: 1,
+  //     content:
+  //       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.',
+  //     author: {
+  //       name: 'Burdette Turner',
+  //       designation: 'Web Developer, Abc Company',
+  //     },
+  //   },
+  //   {
+  //     id: 2,
+  //     content:
+  //       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.',
+  //     author: {
+  //       name: 'Susan Yost',
+  //       designation: 'Client',
+  //     },
+  //   },
+  //   {
+  //     id: 3,
+  //     content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+  //     author: {
+  //       name: 'Irving Feeney',
+  //       designation: 'Fiverr Client',
+  //     },
+  //   },
+  // ],
+  // skills: [
+  //   {
+  //     title: 'HTML5',
+  //     value: 95,
+  //   },
+  //   {
+  //     title: 'CSS3',
+  //     value: 90,
+  //   },
+  //   {
+  //     title: 'Javascript',
+  //     value: 70,
+  //   },
+  //   {
+  //     title: 'jQuery',
+  //     value: 85,
+  //   },
+  //   {
+  //     title: 'ReactJS',
+  //     value: 80,
+  //   },
+  //   {
+  //     title: 'Photoshop',
+  //     value: 65,
+  //   },
+  // ],
   portfolios: [
     {
       id: 1,
@@ -302,53 +302,60 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: '2018 - Present',
-        position: 'Frontend Web Developer',
-        company: 'Abc Company',
+        year: '2019 - Present',
+        position: 'Web Developer',
+        company: 'The Odin Project',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'Contribute to open source projects. So far I have made significant contributions to The Odin Project and written lessons and site updates.',
       },
       {
         id: 2,
-        year: '2016 - 2018',
-        position: 'Frontend Web Developer',
-        company: 'CBA Company',
+        year: '2011 - present',
+        position: 'Lab Tech',
+        company: 'Team Braces',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'I work with a small treatment team to assist patients in accomplishing their goals. At Team Braces I actively take part in assisting over 40 patients a week in their treatment journey. I make essex and wired retainers for our patients. I also make models that the surgeons and doctors need in order to plan the best treatment for each individual.',
       },
       {
         id: 3,
-        year: '2014 - 1016',
-        position: 'UI/UX Designer',
-        company: 'Example Company',
+        year: '2013 - 2017',
+        position: 'Ramp Supervisor',
+        company: 'Delta Airlines',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'Led a team of 10 people to carry out the tasks of each day, and work together efficiently so every flight went smoothly and on time.',
       },
     ],
     educationExperience: [
       {
         id: 1,
-        year: '2018 - 2019',
-        graduation: 'Master of Science',
-        university: 'Abc University',
+        year: '2019 - 2022',
+        graduation: 'Self Taught Programmer',
+        university: 'The Odin Project',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'Discovered my passion for software in 2019 when exploring different career paths. I initially attended a programming bootcamp and decided to follow it up with supplimental learning material. After doing some research about the best paths for self study I often saw TOP (The Odin Project) recommended. I started TOP, joined the community in 2019 then proceeded to fall in love with software and the community. The curriculum has 10,000 daily active users on discord. The community itself is wholesome, helpful and welcoming. TOP has become a second home and family to me as we TOP members actively help, push and encourage each other to succeed on our paths as developers.',
       },
       {
         id: 2,
-        year: '2016 - 2018',
-        graduation: 'Bachelor of Science',
-        university: 'Abc University',
+        year: '2019 - 2020',
+        graduation: 'Programming bootcamp',
+        university: 'UCSD',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'Attended a programming bootcamp with ZERO prior programming experience. This was my intro to software. I learned a lot through creating projects while working on teams, or independently. I really enjoyed the work, created some really cool projects and got to meet some awesome people.',
       },
       {
         id: 3,
-        year: '2015 - 2016',
-        graduation: 'Higher Schoold Graduation',
-        university: 'Abc College',
+        year: '2011-2019',
+        graduation: 'Life experience',
+        university: 'Worked, explored different career options',
         details:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+          'After Highschool, I landed a job as a Lab Tech. Got to be involved in patient treatment and progress which I found very fulfilling. The team was kind to me and allowed me to work reduced hours to try other aspects of life. I worked at the airport for a number of years and became a supervisor. I attended Border Patrol academy, only to discover that path was not the best fit for me. Eventually I discovered a passion for hardware, computers, and tech. After working as a computer tech briefly, I attempted some software challenges and really enjoyed them. It was at this point I decided to commit and immerse myself in learning software.',
+      },
+      {
+        id: 4,
+        year: '2011',
+        graduation: 'High School',
+        university: 'Bonita Vista Highschool',
+        details: 'Graduated in 2011.',
       },
     ],
   },
@@ -492,9 +499,9 @@ const database = {
     },
   ],
   contactInfo: {
-    phoneNumbers: ['+012-3456-7891', '+012-3456-7892'],
-    emailAddress: ['admin.sitename@example.com', 'info.sitename@example.com'],
-    address: '121 King Street, Melbourne, Victoria 3000, Australia',
+    phoneNumbers: ['619-871-1891'],
+    emailAddress: ['michaelleojacob@gmail.com'],
+    address: 'San Diego, California',
   },
 };
 
