@@ -34,31 +34,31 @@ const database = {
       title: 'Front-end Dev',
       icon: 'react',
       details:
-        'Extensive knowledge and practice with using React. Creating pixel perfect UIs. Able to create awesome visuals using Javascript, HTML, and css',
+        'Able to create awesome visuals using Javascript, HTML, and CSS. Extensive knowledge and practice with using React. Proficient at crafting pixel perfect UIs.',
     },
     {
       title: 'Back-end Dev',
       icon: 'code',
       details:
-        'Able to create-read-update-delete from a database. Use and write custom APIs to accomplish goals. Structure and plan out database architecture',
+        'Create-read-update-delete from a database. Use and write custom APIs to accomplish goals. Structure and plan out database architecture',
     },
     {
       title: 'Mobile Application',
       icon: 'mobile',
       details:
-        'Able to create apps and websites that look appealing on mobile interfaces. Through the use of @media and React Native, I am able to make Mobile look simple, intuivite and easy to understand.',
+        'Create apps and websites that look appealing on mobile interfaces. Through the use of @media and React Native, I am able to make Mobile look simple, intuivite and easy to understand.',
     },
     {
       title: 'Problem Solving',
       icon: 'bulb',
       details:
-        'I enjoy taking on new challenges. I have yet to meet a problem I cannot solve. Using syntax and programming languages as my tools, I believe anything is possible.',
+        'Enjoy taking on new challenges. I have yet to meet a problem I cannot solve. Using syntax and programming languages as my tools, I believe anything is possible.',
     },
     {
       title: 'Team Player',
       icon: 'sun',
       details:
-        'Goofball, friendly and fun to be around. I thrive both when working with others and independently. I think being a team player and working together to peer code, review and submit changes is extremely powerful.',
+        'Goofball, friendly and fun to be around. I thrive both when working with others and independently. My goal is always to make people laugh, smile and enjoy the process. Aim to be reliable, consistent and a hard worker.',
     },
   ],
   // reviews: [

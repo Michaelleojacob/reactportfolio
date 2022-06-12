@@ -69,7 +69,7 @@ function About() {
                 <ProgressiveImage
                   src={information.aboutImage}
                   placeholder='/images/about-image-placeholder.png'>
-                  {() => (
+                  {(src) => (
                     <img
                       src={process.env.PUBLIC_URL + src}
                       alt='aboutimage'
@@ -92,9 +92,9 @@ function About() {
                   I am <span className='color-theme'>{information.name}</span>
                 </h3>
                 <p>
-                  Actively seeking Software and Web Development roles that allow
-                  me to practice, improve and expand my knowledge of code and my
-                  ability to use code effectively.
+                  Currently seeking Software and Web Development roles that
+                  allow me to practice, improve and expand my knowledge of code
+                  and my ability to use code effectively.
                 </p>
                 <p></p>
                 <ul>
