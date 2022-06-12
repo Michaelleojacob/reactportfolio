@@ -29,7 +29,8 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/reactportfolio'>
+      {/* // <BrowserRouter> */}
       {/* <div className="light-mode">
         <span className="icon">
           <Icon.Sun />
