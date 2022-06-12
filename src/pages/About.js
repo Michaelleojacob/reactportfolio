@@ -140,7 +140,7 @@ function About() {
                   )} */}
                 </ul>
                 <a
-                  href={information.cvfile}
+                  href={process.env.PUBLIC_URL + information.cvfile}
                   target='blank'
                   className='mi-button'>
                   my resume
