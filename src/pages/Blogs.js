@@ -1,10 +1,10 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import BlogsView from "../components/BlogsView";
-import Layout from "../components/Layout";
-import Pagination from "../components/Pagination";
-import Sectiontitle from "../components/Sectiontitle";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import BlogsView from '../components/BlogsView';
+import Layout from '../components/Layout';
+import Pagination from '../components/Pagination';
+import Sectiontitle from '../components/Sectiontitle';
 
 function Blogs() {
   const [posts, setPosts] = useState([]);
@@ -13,7 +13,7 @@ function Blogs() {
 
   useEffect(() => {
     let mounted = true;
-    axios.get("/api/blog").then((response) => {
+    axios.get('/api/blog').then((response) => {
       if (mounted) {
         setPosts(response.data);
       }
@@ -33,19 +33,19 @@ function Blogs() {
   return (
     <Layout>
       <Helmet>
-        <title>Blogs - Chester React Personal Portfolio Template</title>
+        <title>michaelleojacob react-portolfio blogs</title>
         <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Blogs Page"
+          name='description'
+          content='michaelleojacob react-portolfio blogs'
         />
       </Helmet>
-      <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Recent Blogs" />
+      <div className='mi-about mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Recent Blogs' />
           <BlogsView blogs={currentPosts} />
           {!(posts.length > postsPerPage) ? null : (
             <Pagination
-              className="mt-50"
+              className='mt-50'
               itemsPerPage={postsPerPage}
               totalItems={posts.length}
               paginate={paginate}

@@ -51,7 +51,7 @@ function Header() {
           </li>
           <li>
             <NavLink to='/portfolios'>
-              <span>Portfolios</span>
+              <span>Projects</span>
             </NavLink>
           </li>
           {/* <li>

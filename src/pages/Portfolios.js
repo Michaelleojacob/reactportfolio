@@ -1,10 +1,10 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/Layout";
-import Pagination from "../components/Pagination";
-import PortfoliosView from "../components/PortfoliosView";
-import Sectiontitle from "../components/Sectiontitle";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import Layout from '../components/Layout';
+import Pagination from '../components/Pagination';
+import PortfoliosView from '../components/PortfoliosView';
+import Sectiontitle from '../components/Sectiontitle';
 
 function Portfolios() {
   const [portfolios, setPortfoios] = useState([]);
@@ -13,7 +13,7 @@ function Portfolios() {
 
   useEffect(() => {
     let mounted = true;
-    axios.get("/api/portfolios").then((response) => {
+    axios.get('/api/portfolios').then((response) => {
       if (mounted) {
         setPortfoios(response.data);
       }
@@ -36,19 +36,19 @@ function Portfolios() {
   return (
     <Layout>
       <Helmet>
-        <title>Portfolios - Chester React Personal Portfolio Template</title>
+        <title>michaelleojacob react-portolfio projects</title>
         <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Portfolios Page"
+          name='description'
+          content='michaelleojacob react-portolfio projects'
         />
       </Helmet>
-      <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Portfolios" />
+      <div className='mi-about mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Portfolios' />
           {<PortfoliosView portfolios={currentPortfolios} />}
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination
-              className="mt-50"
+              className='mt-50'
               itemsPerPage={portfoliosPerPage}
               totalItems={portfolios.length}
               paginate={paginate}
