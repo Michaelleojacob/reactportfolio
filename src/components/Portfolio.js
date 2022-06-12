@@ -105,7 +105,13 @@ function Portfolio(props) {
         </div>
       ) : null}
       {!largeImageUrl ? null : (
-        <FsLightbox toggler={toggler} sources={largeImageUrl} />
+        <FsLightbox
+          toggler={toggler}
+          sources={[
+            process.env.PUBLIC_URL + largeImageUrl[0],
+            process.env.PUBLIC_URL + largeImageUrl[1],
+          ]}
+        />
       )}
     </div>
   );
