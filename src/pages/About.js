@@ -139,7 +139,10 @@ function About() {
                     </li>
                   )} */}
                 </ul>
-                <a href={information.cvfile} className='mi-button'>
+                <a
+                  href={information.cvfile}
+                  target='blank'
+                  className='mi-button'>
                   Download CV
                 </a>
               </div>
