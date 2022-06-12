@@ -1,6 +1,6 @@
-import React from "react";
-import ProgressiveImage from "react-progressive-image";
-import { Link } from "react-router-dom";
+import React from 'react';
+import ProgressiveImage from 'react-progressive-image';
+import { Link } from 'react-router-dom';
 
 function Blog(props) {
   const { id, featuredImage, title, createDay, createMonth, filesource } =
@@ -9,28 +9,29 @@ function Blog(props) {
     return month.slice(0, 3);
   };
   const getNospaceTitle = (filesource) => {
-    let tempArr = filesource.split("/");
+    let tempArr = filesource.split('/');
     let fileName = tempArr[tempArr.length - 1];
     let getName = fileName.slice(0, -3);
     return getName;
   };
   return (
-    <div className="mi-blog">
-      <div className="mi-blog-image">
+    <div className='mi-blog'>
+      <div className='mi-blog-image'>
         <Link to={`${id}/${getNospaceTitle(filesource)}`}>
           <ProgressiveImage
             src={featuredImage}
-            placeholder="/images/blog-image-placeholder.png"
-          >
-            {(src) => <img src={src} alt={title} />}
+            placeholder='/images/blog-image-placeholder.png'>
+            {(src) => (
+              <img src={`${process.env.PUBLIC_URL}${src}`} alt={title} />
+            )}
           </ProgressiveImage>
         </Link>
-        <div className="mi-blog-date">
-          <span className="date">{createDay}</span>
-          <span className="month">{getShortMonth(createMonth)}</span>
+        <div className='mi-blog-date'>
+          <span className='date'>{createDay}</span>
+          <span className='month'>{getShortMonth(createMonth)}</span>
         </div>
       </div>
-      <div className="mi-blog-content">
+      <div className='mi-blog-content'>
         <h5>
           <Link to={`${id}/${getNospaceTitle(filesource)}`}>{title}</Link>
         </h5>
