@@ -123,7 +123,7 @@
   display: flex;
   flex-direction: row;
   gap:0.5rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 0.5rem 0rem
 }
 
@@ -161,6 +161,18 @@
 }
 .my-icon-holder > .my-ruby{
   color: #820c02;
+}
+.my-icon-holder > .my-jest{
+  color: #C63D14;
+}
+.my-icon-holder > .my-webpack{
+  color: #1c78c0;
+}
+.my-icon-holder > .my-node{
+  color: #3C873A;
+}
+.my-icon-holder > .my-npm{
+  color: #CC3534;
 }
 
 .my-tooltip{
