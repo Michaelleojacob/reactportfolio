@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmichaelleojacobreactportfolio=self.webpackChunkmichaelleojacobreactportfolio||[]).push([[307],{5307:function(e,a,c){e.exports=c.p+"static/media/future-of-javascript.88d815106d6c6387aaec.md"}}]);
