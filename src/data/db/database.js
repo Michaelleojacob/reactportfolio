@@ -160,8 +160,8 @@ const database = {
         'imitates an eCommerse site. Allows you to add items to a cart. Then inspect and edit the cart, and checkout once you are done shopping.',
       imageUrl: '/images/portfolio-image-3.jpg',
       largeImageUrl: [
-        './images/portfolio-image-3-lg.jpg',
-        './images/portfolio-image-3-lg2.jpg',
+        '/images/portfolio-image-3-lg.jpg',
+        '/images/portfolio-image-3-lg2.jpg',
       ],
       url: 'https://github.com/Michaelleojacob/shopping-cart-redux-router',
       live: 'https://michaelleojacob.github.io/shopping-cart-redux-router/',
