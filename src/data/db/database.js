@@ -130,13 +130,15 @@ const database = {
       live: 'https://michaelleojacob-photo-tagging-app.web.app/',
       icons: [
         'react',
-        'javascript',
-        'html',
-        'css',
         'firebase',
         'router',
         'redux',
-        'ruby',
+        'firestore',
+        'javascript',
+        'html',
+        'css',
+        'webpack',
+        'npm',
       ],
     },
     {
@@ -151,7 +153,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/bsBattleShipV1',
       live: 'https://michaelleojacob.github.io/bsBattleShipV1/',
-      icons: ['javascript', 'css', 'html', 'jest', 'webpack', 'npm'],
+      icons: ['jest', 'javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 3,
@@ -174,7 +176,6 @@ const database = {
         'css',
         'webpack',
         'npm',
-        'node',
       ],
     },
     {
@@ -189,7 +190,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/pokememory',
       live: 'https://michaelleojacob.github.io/pokememory/',
-      icons: ['react', 'javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+      icons: ['react', 'javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 5,
@@ -203,7 +204,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/cv-project',
       live: 'https://michaelleojacob.github.io/cv-project',
-      icons: ['react', 'javascript', 'html', 'css', 'npm', 'webpack', 'node'],
+      icons: ['react', 'javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 6,
@@ -217,7 +218,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/weatherv1',
       live: 'https://michaelleojacob.github.io/weatherv1/',
-      icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+      icons: ['javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 7,
@@ -231,7 +232,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/mytodo',
       live: 'https://michaelleojacob.github.io/mytodo/',
-      icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+      icons: ['localStorage', 'javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 8,
@@ -245,7 +246,7 @@ const database = {
       ],
       url: 'https://github.com/Michaelleojacob/mybooklistv2',
       live: 'https://michaelleojacob.github.io/mybooklistv2/',
-      icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+      icons: ['javascript', 'html', 'css', 'webpack', 'npm'],
     },
     {
       id: 9,
@@ -256,7 +257,7 @@ const database = {
       largeImageUrl: ['/images/portfolio-image-9-lg.jpg'],
       url: 'https://github.com/Michaelleojacob/tictactoe',
       live: 'https://michaelleojacob.github.io/tictactoe/',
-      icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+      icons: ['javascript', 'html', 'css', 'webpack', 'npm'],
     },
     // {
     //   id: 10,
@@ -266,7 +267,7 @@ const database = {
     //   largeImageUrl: ['/images/portfolio-image-3-lg.jpg'],
     //   live: '',
     //   url: '#',
-    //   icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+    //   icons: ['javascript', 'html', 'css', 'webpack', 'npm'],
     // },
     // {
     //   id: 11,
@@ -279,7 +280,7 @@ const database = {
     //   ],
     //   live: '',
     //   url: 'https://facebook.com',
-    //   icons: ['javascript', 'html', 'css', 'webpack', 'npm', 'node'],
+    //   icons: ['javascript', 'html', 'css', 'webpack', 'npm'],
     // },
     // {
     //   id: 12,
